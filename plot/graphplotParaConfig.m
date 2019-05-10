@@ -1,0 +1,9 @@
+function graphplotParaConfig
+plot(G1,'XData',G1.Nodes.XCoor,'YData',G1.Nodes.YCoor,'ZData',G1.Nodes.ZCoor,'NodeCData',wcccg/max(abs(wcccg)),...
+        'LineStyle','none','NodeLabel',G1.Nodes.nodeLabel,'Marker',nodemarker,'MarkerSize',8*abs(wcccg)/max(abs(wcccg)));
+    h = plot(G,'XData',G.Nodes.XCoor,'YData',G.Nodes.YCoor,...
+            'EdgeColor','b','LineStyle','-.',...%'NodeColor','r',...
+            'LineWidth',2*G.Edges.Weight./max(G.Edges.Weight),'NodeLabel',G.Nodes.nodeLabel);
+highlight(h,find(G.Nodes.markNode),'NodeColor','r'); %the stimulated channel
+end
+
