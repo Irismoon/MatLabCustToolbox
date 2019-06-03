@@ -1,4 +1,4 @@
-function [y] = change_row_to_col(data,chn)
+function [y] = row2col(data,chn)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 [row,col] = size(data);
