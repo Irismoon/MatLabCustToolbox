@@ -81,7 +81,7 @@ else
 	error('Input <N> may be a numeric scalar/empty, or a cell array of handles.')
 end
 %
-[mcs,mun,pyt] = plot.brewermap('list');
+[mcs,mun,pyt] = brewermap('list');
 %
 % Check BREWERMAP outputs:
 ers = 'The function BREWERMAP returned an unexpected %s.';
@@ -222,7 +222,7 @@ set(pSld,'Value',max(lbd,min(rbd,N)));
 		% Update all graphics objects in the figure.
 		%
 		% Get ColorBrewer colormap and grayscale equivalent:
-		[map,num,typ] = plot.brewermap(N,makeName());
+		[map,num,typ] = brewermap(N,makeName());
 		mag = map*[0.298936;0.587043;0.114021];
 		%
 		% Update colorbar values:
@@ -255,7 +255,7 @@ set(pSld,'Value',max(lbd,min(rbd,N)));
 		% Update external axes/figure:
 		nmr(1) = N;
 		for ii = find(cellfun(@ishghandle,hgc))
-			colormap(hgc{ii},plot.brewermap(nmr(ii),makeName()));
+			colormap(hgc{ii},brewermap(nmr(ii),makeName()));
 		end
 		%
 		drawnow()

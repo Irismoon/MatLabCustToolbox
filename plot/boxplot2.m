@@ -1,17 +1,18 @@
 function h = boxplot2(varargin)
-%BOXPLOT2 Enhanced boxplot plots
-% 
 % h = boxplot2(y)
 % h = boxplot2(y,x)
 % h = boxplot2(..., p1, v1, ...)
-%
-%
+%adjust cosmetic appearance by h,
+%e.g. set(h.med,'color','k');
+%structfun(@(x) set(x,'marker','*'),h),change the marker of each field
 % Input variables:
 %
-%   y:              either a ndata x nx array (as in boxplot) or nx x ny x
+%   y:              1.ndata x nx array (as in boxplot) 2.nx x ny x
 %                   ndata array where nx indicates the number of
 %                   x-clusters, ny the number of boxes per cluster, and
-%                   ndata the number of points per boxplot.
+%                   ndata the number of points per boxplot.3.nx x ny cell,
+%                   inside a ndata x 1 vector, each cell may have different
+%                   number of elements
 %
 %   x:              vector of x locations for each box cluster
 %
@@ -90,9 +91,9 @@ ybox = reshape(In.y, [], ndata)';
 
 % Use bar graph to get x positions
 
-% figtmp = figure('visible', 'off');
+figtmp = figure('visible', 'off');
 try
-%     hax = axes(figtmp);
+    hax = axes(figtmp);
     hb = bar(In.x, In.y(:,:,1), In.barwidth);
     for ib = 1:length(hb)
         if verLessThan('matlab','8.4.0')
@@ -122,10 +123,10 @@ try
                   'widths', boxwidth, ...
                   'whisker', In.whisker);
     
-    h.box   = findall(hax, 'tag', 'Box');
-    h.ladj  = findall(hax, 'tag', 'Lower Adjacent Value');
-    h.lwhis = findall(hax, 'tag', 'Lower Whisker');
-    h.med   = findall(hax, 'tag', 'Median');
+    h.box   = copyobj(findall(hax, 'tag', 'Box'), In.axes);
+    h.ladj  = copyobj(findall(hax, 'tag', 'Lower Adjacent Value'), In.axes);
+    h.lwhis = copyobj(findall(hax, 'tag', 'Lower Whisker'), In.axes);
+    h.med   = copyobj(findall(hax, 'tag', 'Median'), In.axes);
     h.out   = copyobj(findall(hax, 'tag', 'Outliers'), In.axes);
     h.uadj  = copyobj(findall(hax, 'tag', 'Upper Adjacent Value'), In.axes);
     h.uwhis = copyobj(findall(hax, 'tag', 'Upper Whisker'), In.axes);

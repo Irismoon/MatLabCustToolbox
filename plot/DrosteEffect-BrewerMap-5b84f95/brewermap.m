@@ -1,18 +1,10 @@
 function [map,num,typ] = brewermap(N,scheme)
-% The complete selection of ColorBrewer colorschemes (RGB colormaps).
-%
-% (c) 2014 Stephen Cobeldick
-%
-% Returns any RGB colormap from the ColorBrewer colorschemes, especially
-% intended for mapping and plots with attractive, distinguishable colors.
-%
 %%% Syntax (basic):
-%  map = brewermap(N,scheme); % Select colormap length, select any colorscheme.
+%  map = brewermap(N,scheme);colormap(brewermap([],'YlGnBu')) % Select colormap length, select any colorscheme.
+% map: N x 3 matrix, 0-1 RGB value
 %  brewermap('plot')          % View a figure showing all ColorBrewer colorschemes.
 %  schemes = brewermap('list')% Return a list of all ColorBrewer colorschemes.
-%  [map,num,typ] = brewermap(...); % The current colorscheme's number of nodes and type.
-%
-%%% Syntax (preselect colorscheme):
+%  [map,num,typ] = brewermap(...); % The current colorscheme's number of nodes and type.scheme):
 %  old = brewermap(scheme); % Preselect any colorscheme, return the previous scheme.
 %  map = brewermap(N);      % Use preselected scheme, select colormap length.
 %  map = brewermap;         % Use preselected scheme, length same as current figure's colormap.
@@ -37,7 +29,7 @@ function [map,num,typ] = brewermap(N,scheme)
 %
 %%% Diverging
 %
-% Scheme|'BrBG'|'PRGn'|'PiYG'|'PuOr'|'RdBu'|'RdGy'|'RdYlBu'|'RdYlGn'|'Spectral'|
+% Scheme|'BrBG'|'PRGn'|'PiYG'|'PuOr'|'RdBu'|'RdGy'|'RdYlBu'|'RdYl(laura rather than I'm/one)Gn'|'Spectral'|
 % ------|------|------|------|------|------|------|--------|--------|----------|
 % Nodes |  11  |  11  |  11  |  11  |  11  |  11  |   11   |   11   |    11    |
 %
@@ -86,9 +78,6 @@ function [map,num,typ] = brewermap(N,scheme)
 % end
 %
 %%% New colors for the COLORMAP example:
-% load spine
-% image(X)
-% colormap(brewermap([],'YlGnBu'))
 %
 %%% New colors for the SURF example:
 % [X,Y,Z] = peaks(30);
