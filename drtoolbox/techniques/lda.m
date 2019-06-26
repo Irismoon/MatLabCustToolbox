@@ -60,6 +60,8 @@ function [mappedX, mapping] = lda(X, labels, no_dims)
     if nc <= no_dims
         no_dims = nc - 1;
         warning(['Target dimensionality reduced to ' num2str(no_dims) '.']);
+        %lda use the class info to construct the between class covariance
+        %matrix, thus determine the maximum dimension
     end
 	
 	% Perform eigendecomposition of inv(Sw)*Sb

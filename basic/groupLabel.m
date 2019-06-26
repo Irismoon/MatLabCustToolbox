@@ -1,7 +1,8 @@
 function groupLabel = groupLabel(X)
 %groupLabel = groupLabel(X)
-%usually used in boxplot function or similar function which need to use the
-%groupLabel to recognize data belonging to different groups but in one
+%e.g. x = [2 3 4;5 6 7;8 9 10];
+%groupLabel = [1;1;1;2;2;2;3;3;3]
+%usually used for boxplot function 
 %vector
 if iscell(X)
     len = cellfun(@length,X);
