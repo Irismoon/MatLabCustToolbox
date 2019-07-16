@@ -1,8 +1,12 @@
 function figlist = multchnPlot(x,t,markt,varargin)
-%figlist = multchnPlot(x,t,markt,stdx,chnname,pnname,auto,layout,plotstyle)
+%figlist = multchnPlot(x,t,markt,stdx(op),chnname(op),pnname(op),auto(op),layout(op),plotstyle)
 %x: ts x trial x chn; the last dimension is one subplot
+%t, 2 x 1 vector, start and end of a trial
+%markt, any length vector
+%stdx, standard deviation of x for boundplot,t x line 
+%chnname, pnname,
 %layout: the layout of whole figure
-%lplotstyle: 'plot','imagesc'
+%lplotstyle: 'boundplot','plot','imagesc'
 %auto: 1 is autoadjust, 0 is not autoadjust
 sz = size(x);
 p = inputParser;

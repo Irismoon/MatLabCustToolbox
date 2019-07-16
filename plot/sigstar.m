@@ -74,8 +74,8 @@ function varargout=sigstar(groups,stats,nosort)
 
     %If the user entered just one group pair and forgot to wrap it in a cell array 
     %then we'll go easy on them and wrap it here rather then generate an error
-    if ~iscell(groups) & length(groups)==2
-        groups={groups};
+    if ~iscell(groups) & size(groups,2)==2
+        groups=mat2cell(groups,ones(size(groups,1),1),2);
     end
 
     if nargin<2 
@@ -103,7 +103,9 @@ function varargout=sigstar(groups,stats,nosort)
     if length(stats)~=length(groups)
         error('groups and stats must be the same length')
     end
-
+    idx = stats<0.05;
+    stats = stats(idx);
+    groups = groups(idx);
 
 
 
