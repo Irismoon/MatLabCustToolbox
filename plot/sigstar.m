@@ -103,9 +103,6 @@ function varargout=sigstar(groups,stats,nosort)
     if length(stats)~=length(groups)
         error('groups and stats must be the same length')
     end
-    idx = stats<0.05;
-    stats = stats(idx);
-    groups = groups(idx);
 
 
 

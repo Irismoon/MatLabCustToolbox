@@ -1,5 +1,7 @@
-function [pair,p] = multcompare2(func,A)
+function [pair,p] = multicompare2(func,A)
 %[pair,p] = multicompare(func,A)
+%func: function handle, e.g.ranksum(x,y)
+%A: sample x var matrix or var x 1 cell vector
 assert(isa(func,'function_handle'),'Please Provide a function handle!');
 if iscell(A)
     A = unequalcell2mat(A);

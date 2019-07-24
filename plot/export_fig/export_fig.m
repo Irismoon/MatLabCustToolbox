@@ -1,4 +1,4 @@
-function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
+function [imageData, alpha] = export_fig(fig,varargin) %#ok<*STRCL1>
 %EXPORT_FIG  Exports figures in a publication-quality format
 %
 % Examples:
@@ -301,7 +301,7 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
     pause(0.05);  % this solves timing issues with Java Swing's EDT (http://undocumentedmatlab.com/blog/solving-a-matlab-hang-problem)
 
     % Parse the input arguments
-    fig = get(0, 'CurrentFigure');
+%     fig = get(0, 'CurrentFigure');
     [fig, options] = parse_args(nargout, fig, varargin{:});
 
     % Ensure that we have a figure handle

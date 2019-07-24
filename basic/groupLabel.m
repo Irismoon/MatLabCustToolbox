@@ -7,6 +7,7 @@ function groupLabel = groupLabel(X)
 if iscell(X)
     len = cellfun(@length,X);
     groupLabel = arrayfun(@(i) i*ones(len(i),1),1:length(len),'un',0);
+    groupLabel = cat(1,groupLabel{:});
 else
     [sampleLen,noVar] = size(X);
     groupLabel = reshape((1:1:noVar) + zeros(sampleLen,noVar),[],1);

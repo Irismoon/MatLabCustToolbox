@@ -9,6 +9,9 @@ function figlist = multchnPlot(x,t,markt,varargin)
 %lplotstyle: 'boundplot','plot','imagesc'
 %auto: 1 is autoadjust, 0 is not autoadjust
 sz = size(x);
+if length(sz)<3
+    sz = [sz 1];
+end
 p = inputParser;
 addRequired(p,'x',@isnumeric);
 addRequired(p,'t',@isnumeric);
