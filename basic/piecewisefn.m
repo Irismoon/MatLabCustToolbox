@@ -4,7 +4,7 @@ function idata = piecewisefn(fun,data,varargin)
 %data : vector or multidim array
 p=inputParser;
 addRequired(p,'func',@(x) isa(x,'function_handle'));
-addRequired(p,'data',@isnumeric);
+addRequired(p,'data');
 addParameter(p,'edge',nan);
 addParameter(p,'label',nan);
 parse(p,fun,data,varargin{:});
@@ -31,7 +31,10 @@ elseif any(~isnan(label))
         S.subs = [{find(label==ulabel(i))};repmat({':'},ndims(data)-1,1)];
         idata{i} = fun(subsref(data,S));
     end
+    if iscell(data)
+    else
     idata = cat(1,idata{:});
+    end
 else
     error;
 end
