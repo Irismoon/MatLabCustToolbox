@@ -3,7 +3,7 @@ function figlist = multchnPlot(x,t,markt,varargin)
 %x: ts x trial x chn; the last dimension is one subplot
 %t, 2 x 1 vector, start and end of a trial
 %markt, any length vector
-%stdx, standard deviation of x for boundplot,t x line 
+%stdx, standard deviation of x for boundplot,t x 2 x line x chn
 %chnname, pnname,
 %layout: the layout of whole figure
 %lplotstyle: 'boundplot','plot','imagesc'
@@ -45,27 +45,31 @@ if auto
     [layout(1),layout(2)] = arrange_subplots(min(chnNo,25));
 end
 figlist = [];
+cmap = brewermap(sz(2),'Set1');
 for i = 1:chnNo
     if mod(i,prod(layout))==1 || prod(layout==1)
         fh = figure('units','normalized','outerposition',[0 0 1 1]);
         figlist = [figlist;fh];
     end
     if mod(i,prod(layout))==0
-        subplot_tight(layout(1),layout(2),prod(layout));
+%         subplot_tight(layout(1),layout(2),prod(layout));
+          subplot(layout(1),layout(2),prod(layout));
     else
-        subplot_tight(layout(1),layout(2),mod(i,prod(layout)));
+%         subplot_tight(layout(1),layout(2),mod(i,prod(layout)));
+          subplot(layout(1),layout(2),mod(i,prod(layout)));
     end
     %     eval([plotstyle,'(x(:,:,i))'])
     switch plotstyle
         case 'boundplot'
-            boundedline(linspace(t(1),t(end),sz(1)),x(:,:,i),...
-                repmat(reshape(stdx(:,:,i),[sz(1) 1 sz(2)]),1,2,1));
+            h1 = boundedline(linspace(t(1),t(end),sz(1)),x(:,:,i),...
+                stdx(:,:,:,i),'alpha','cmap',cmap);
+            [h1.LineWidth] = deal(2);
             ax = gca;
-            ax.XTick = [t(1) markt t(2)];
+            ax.XTick = sort([t(1) markt t(2)]);
+            axis tight;
             hold on;
             arrayfun(@(i) line([markt(i) markt(i)],ax.YLim,'Color','k','LineStyle','--','LineWidth',1.5),...
-                1:length(markt),'un',0);
-            axis tight;
+                1:length(markt),'un',0);           
         case 'plot'
             plot(linspace(t(1),t(end),sz(1)),x(:,:,i));%ts x trial
             xlabel('t/s');ylabel('power/dB');
@@ -83,9 +87,9 @@ for i = 1:chnNo
                 1:length(markt),'un',0);
     end
     
-    title(chnname{i});
+%     title(chnname{i});
     if mod(i,prod(layout))==0 || i==chnNo
-        suptitle(num2str(pnname));
+%         suptitle(num2str(pnname));
     end
 end
 

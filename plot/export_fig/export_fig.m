@@ -77,7 +77,8 @@ function [imageData, alpha] = export_fig(fig,varargin) %#ok<*STRCL1>
 %   http://www.ghostscript.com
 % When exporting to EPS it additionally requires pdftops, from the Xpdf
 % suite of functions. You can download this from: http://xpdfreader.com
-%
+% you need to download both xpdfreader and xpdf commandine tools
+
 % SVG output uses the fig2svg (https://github.com/kupiqu/fig2svg) or plot2svg
 % (https://github.com/jschwizer99/plot2svg) utilities, or Matlab's built-in
 % SVG export if neither of these utilities are available on Matlab's path.

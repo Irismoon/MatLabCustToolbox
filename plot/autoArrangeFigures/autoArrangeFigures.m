@@ -1,7 +1,10 @@
 function autoArrangeFigures(NH, NW, monitor_id)
+%autoArrangeFigures(NH, NW, monitor_id)
+%or autoArrangeFigures
 % INPUT  :
 %        NH : number of grid of vertical direction
 %        NW : number of grid of horizontal direction
+%         monitor_id : 1
 % OUTPUT :
 %
 % get every figures that are opened now and arrange them.

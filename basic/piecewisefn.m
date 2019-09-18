@@ -1,5 +1,5 @@
 function idata = piecewisefn(fun,data,varargin)
-%idata = intervalfn(fun,data,varargin)
+%idata = piecewisefn(fun,data,varargin)
 %varargin: 'edge',[1 20 40 60];
 %data : vector or multidim array
 p=inputParser;
