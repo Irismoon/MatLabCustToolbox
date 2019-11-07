@@ -7,7 +7,8 @@ function h = boxplot2(varargin)
 %structfun(@(x) set(x,'marker','*'),h),change the marker of each field
 % Input variables:
 %
-%   y:              1.ndata x nx array (as in boxplot) 2.nx x ny x
+%   y:              nx for each box cluster, ny for number of clusters
+%                   1.ndata x nx array (as in boxplot) 2.nx x ny x
 %                   ndata array where nx indicates the number of
 %                   x-clusters, ny the number of boxes per cluster, and
 %                   ndata the number of points per boxplot.3.nx x ny cell,
