@@ -1,6 +1,6 @@
 
 @article{kroliczak2016,
-  title = {Specialization of the Left Supramarginal Gyrus for Hand-Independent Praxis Representation Is Not Related to Hand Dominance},
+ title = {Specialization of the left supramarginal gyrus for hand-independent praxis representation is not related to hand dominance},
   volume = {93},
   issn = {0028-3932},
   number = {Pt B},
@@ -12,7 +12,7 @@
   pages = {501-512}
 }
 @article{edgington1998randomization,
-title={Randomization Tests (3rd ed.)},
+ title = {Randomization tests (3rd ed.)},
 author={Edgington, E},
 journal={Technometrics},
 volume={40},
@@ -20,7 +20,7 @@ number={2},
 pages={163--163},
 year={1998}}
 @article{aflalo2015,
-  title = {Decoding Motor Imagery from the Posterior Parietal Cortex of a Tetraplegic Human},
+ title = {Decoding motor imagery from the posterior parietal cortex of a tetraplegic human},
   volume = {348},
   issn = {0036-8075, 1095-9203},
   number = {6237},
@@ -33,10 +33,9 @@ year={1998}}
 }
 
 @article{klaes2015,
-  title = {Hand Shape Representations in the Human Posterior Parietal Cortex},
+ title = {Hand shape representations in the human posterior parietal cortex},
   volume = {35},
-  copyright = {Copyright \textcopyright{} 2015 the authors 0270-6474/15/3515466-11\$15.00/0},
-  issn = {0270-6474, 1529-2401},
+  copyright = {Copyright 	extcopyright{} 2015 the authors 0270-6474/15/3515466-11  issn = {0270-6474, 1529-2401},
   number = {46},
   journal = {Journal of Neuroscience},
   doi = {10/f73gb2},
@@ -48,7 +47,7 @@ year={1998}}
 }
 
 @article{branco2017,
-  title = {Decoding Hand Gestures from Primary Somatosensory Cortex Using High-Density ECoG},
+ title = {Decoding hand gestures from primary somatosensory cortex using high-density ecog},
   volume = {147},
   issn = {1053-8119},
   journal = {NeuroImage},
@@ -61,10 +60,9 @@ year={1998}}
 }
 
 @article{ariani2015,
-  title = {Decoding {{Internally}} and {{Externally Driven Movement Plans}}},
+ title = {Decoding {{internally}} and {{externally driven movement plans}}},
   volume = {35},
-  copyright = {Copyright \textcopyright{} 2015 the authors 0270-6474/15/3514160-12\$15.00/0},
-  issn = {0270-6474, 1529-2401},
+  copyright = {Copyright 	extcopyright{} 2015 the authors 0270-6474/15/3514160-12  issn = {0270-6474, 1529-2401},
   number = {42},
   journal = {Journal of Neuroscience},
   doi = {10.1523/JNEUROSCI.0596-15.2015},
@@ -75,10 +73,10 @@ year={1998}}
 }
 
 @article{filimon2010,
-  title = {Human {{Cortical Control}} of {{Hand Movements}}: {{Parietofrontal Networks}} for {{Reaching}}, {{Grasping}}, and {{Pointing}}},
+ title = {Human {{cortical control}} of {{hand movements}}: {{parietofrontal networks}} for {{reaching}}, {{grasping}}, and {{pointing}}},
   volume = {16},
   issn = {1073-8584},
-  shorttitle = {Human {{Cortical Control}} of {{Hand Movements}}},
+ title = {Human {{cortical control}} of {{hand movements}}},
   number = {4},
   journal = {The Neuroscientist},
   doi = {10.1177/1073858410375468},
@@ -89,13 +87,13 @@ year={1998}}
 }
 
 @article{buzsaki2012,
-  title = {The Origin of Extracellular Fields and Currents \textemdash{} {{EEG}}, {{ECoG}}, {{LFP}} and Spikes},
+ title = {The origin of extracellular fields and currents 	extemdash{} {{eeg}}, {{ecog}}, {{lfp}} and spikes},
   volume = {13},
   issn = {1471-003X},
   number = {6},
   journal = {Nature Reviews. Neuroscience},
   doi = {10/gdh98k},
-  author = {Buzs{\'a}ki, Gy{\"o}rgy and Anastassiou, Costas A. and Koch, Christof},
+  author = {Buzs{'a}ki, Gy{"o}rgy and Anastassiou, Costas A. and Koch, Christof},
   month = may,
   year = {2012},
   pages = {407-420},
@@ -103,7 +101,7 @@ year={1998}}
 }
 
 @article{hochberg2012,
-  title = {Reach and Grasp by People with Tetraplegia Using a Neurally Controlled Robotic Arm},
+ title = {Reach and grasp by people with tetraplegia using a neurally controlled robotic arm},
   volume = {485},
   issn = {0028-0836},
   number = {7398},
@@ -116,7 +114,7 @@ year={1998}}
 }
 
 @article{nakanishi2013,
-  title = {Prediction of {{Three}}-{{Dimensional Arm Trajectories Based}} on {{ECoG Signals Recorded}} from {{Human Sensorimotor Cortex}}},
+ title = {Prediction of {{three}}-{{dimensional arm trajectories based}} on {{ecog signals recorded}} from {{human sensorimotor cortex}}},
   volume = {8},
   issn = {1932-6203},
   number = {8},
@@ -128,7 +126,7 @@ year={1998}}
 }
 
 @article{flint2014,
-  title = {Extracting Kinetic Information from Human Motor Cortical Signals},
+ title = {Extracting kinetic information from human motor cortical signals},
   volume = {101},
   issn = {1053-8119},
   journal = {NeuroImage},
@@ -141,7 +139,7 @@ year={1998}}
 }
 
 @article{collinger2013,
-  title = {High-Performance Neuroprosthetic Control by an Individual with Tetraplegia},
+ title = {High-performance neuroprosthetic control by an individual with tetraplegia},
   volume = {381},
   issn = {0140-6736},
   number = {9866},
@@ -154,7 +152,7 @@ year={1998}}
 }
 
 @article{asher2007,
-  title = {Comparison of {{Direction}} and {{Object Selectivity}} of {{Local Field Potentials}} and {{Single Units}} in {{Macaque Posterior Parietal Cortex During Prehension}}},
+ title = {Comparison of {{direction}} and {{object selectivity}} of {{local field potentials}} and {{single units}} in {{macaque posterior parietal cortex during prehension}}},
   volume = {97},
   issn = {0022-3077},
   number = {5},
@@ -167,13 +165,13 @@ year={1998}}
 }
 
 @article{scherberger2005,
-  title = {Cortical {{Local Field Potential Encodes Movement Intentions}} in the {{Posterior Parietal Cortex}}},
+ title = {Cortical {{local field potential encodes movement intentions}} in the {{posterior parietal cortex}}},
   volume = {46},
   issn = {0896-6273},
   number = {2},
   journal = {Neuron},
   doi = {10.1016/j.neuron.2005.03.004},
-  author = {Scherberger, Hansj{\"o}rg and Jarvis, Murray R. and Andersen, Richard A.},
+  author = {Scherberger, Hansj{"o}rg and Jarvis, Murray R. and Andersen, Richard A.},
   month = apr,
   year = {2005},
   pages = {347-354},
@@ -181,7 +179,7 @@ year={1998}}
 }
 
 @article{cisek2010,
-  title = {Neural {{Mechanisms}} for {{Interacting}} with a {{World Full}} of {{Action Choices}}},
+ title = {Neural {{mechanisms}} for {{interacting}} with a {{world full}} of {{action choices}}},
   volume = {33},
   issn = {0147-006X, 1545-4126},
   number = {1},
@@ -195,7 +193,7 @@ year={1998}}
 }
 
 @article{ledberg2007,
-  title = {Large-Scale Visuomotor Integration in the Cerebral Cortex},
+ title = {Large-scale visuomotor integration in the cerebral cortex},
   volume = {17},
   issn = {1047-3211},
   number = {1},
@@ -209,7 +207,7 @@ year={1998}}
 }
 
 @article{faugier-grimaud1978,
-  title = {Effects of Posterior Parietal Lesions on Visually Guided Behavior in Monkeys},
+ title = {Effects of posterior parietal lesions on visually guided behavior in monkeys},
   volume = {16},
   issn = {0028-3932},
   number = {2},
@@ -222,7 +220,7 @@ year={1998}}
 }
 
 @article{jeannerod1994,
-  title = {Impairment of Grasping Movements Following a Bilateral Posterior Parietal Lesion},
+ title = {Impairment of grasping movements following a bilateral posterior parietal lesion},
   volume = {32},
   issn = {0028-3932},
   number = {4},
@@ -236,7 +234,7 @@ year={1998}}
 
 @article{culham2006,
   series = {Cognitive Neuroscience},
-  title = {Human Parietal Cortex in Action},
+ title = {Human parietal cortex in action},
   volume = {16},
   issn = {0959-4388},
   number = {2},
@@ -249,7 +247,7 @@ year={1998}}
 }
 
 @article{rathelot2017,
-  title = {Posterior Parietal Cortex Contains a Command Apparatus for Hand Movements},
+ title = {Posterior parietal cortex contains a command apparatus for hand movements},
   volume = {114},
   issn = {0027-8424, 1091-6490},
   number = {16},
@@ -262,7 +260,7 @@ year={1998}}
 }
 
 @article{andersen2004,
-  title = {Selecting the Signals for a Brain\textendash{}Machine Interface},
+ title = {Selecting the signals for a brain	extendash{}machine interface},
   volume = {14},
   issn = {0959-4388},
   number = {6},
@@ -275,7 +273,7 @@ year={1998}}
 }
 
 @article{anumanchipalli2019,
-  title = {Speech Synthesis from Neural Decoding of Spoken Sentences},
+ title = {Speech synthesis from neural decoding of spoken sentences},
   volume = {568},
   number = {7753},
   journal = {Nature},
@@ -286,7 +284,7 @@ year={1998}}
 }
 
 @article{pesaran2002,
-  title = {Temporal Structure in Neuronal Activity during Working Memory in Macaque Parietal Cortex},
+ title = {Temporal structure in neuronal activity during working memory in macaque parietal cortex},
   volume = {5},
   copyright = {2002 Nature Publishing Group},
   issn = {1546-1726},
@@ -300,13 +298,13 @@ year={1998}}
 }
 
 @article{desikan2006,
-  title = {An Automated Labeling System for Subdividing the Human Cerebral Cortex on {{MRI}} Scans into Gyral Based Regions of Interest},
+ title = {An automated labeling system for subdividing the human cerebral cortex on {{mri}} scans into gyral based regions of interest},
   volume = {31},
   issn = {1053-8119},
   number = {3},
   journal = {NeuroImage},
   doi = {10/b2jf74},
-  author = {Desikan, Rahul S. and S{\'e}gonne, Florent and Fischl, Bruce and Quinn, Brian T. and Dickerson, Bradford C. and Blacker, Deborah and Buckner, Randy L. and Dale, Anders M. and Maguire, R. Paul and Hyman, Bradley T. and Albert, Marilyn S. and Killiany, Ronald J.},
+  author = {Desikan, Rahul S. and S{'e}gonne, Florent and Fischl, Bruce and Quinn, Brian T. and Dickerson, Bradford C. and Blacker, Deborah and Buckner, Randy L. and Dale, Anders M. and Maguire, R. Paul and Hyman, Bradley T. and Albert, Marilyn S. and Killiany, Ronald J.},
   month = jul,
   year = {2006},
   pages = {968-980},
@@ -314,10 +312,10 @@ year={1998}}
 }
 
 @article{fischl2002,
-  title = {Whole {{Brain Segmentation}}: {{Automated Labeling}} of {{Neuroanatomical Structures}} in the {{Human Brain}}},
+ title = {Whole {{brain segmentation}}: {{automated labeling}} of {{neuroanatomical structures}} in the {{human brain}}},
   volume = {33},
   issn = {0896-6273},
-  shorttitle = {Whole {{Brain Segmentation}}},
+ title = {Whole {{brain segmentation}}},
   number = {3},
   journal = {Neuron},
   doi = {10/dbx4cf},
@@ -328,9 +326,9 @@ year={1998}}
 }
 
 @inproceedings{li2018,
-  title = {{{SEEGview}}: {{A Toolbox}} for {{Localization}} and {{Visualization}} of {{Stereo}}-{{Electroencephalography}} ({{SEEG}}) {{Electrodes}}},
-  shorttitle = {{{SEEGview}}},
-  booktitle = {2018 {{IEEE International Conference}} on {{Systems}}, {{Man}}, and {{Cybernetics}} ({{SMC}})},
+ title = {{{seegview}}: {{a toolbox}} for {{localization}} and {{visualization}} of {{stereo}}-{{electroencephalography}} ({{seeg}}) {{electrodes}}},
+ title = {{{seegview}}},
+ title = {2018 {{ieee international conference}} on {{systems}}, {{man}}, and {{cybernetics}} ({{smc}})},
   doi = {10/gf62fh},
   author = {Li, G. and Jiang, S. and Wang, M. and Wu, Z. and Brunner, P. and Schalk, G. and Chen, L. and Zhang, D.},
   month = oct,
@@ -339,7 +337,7 @@ year={1998}}
 }
 
 @article{li2018a,
-  title = {Optimal Referencing for Stereo-Electroencephalographic ({{SEEG}}) Recordings},
+ title = {Optimal referencing for stereo-electroencephalographic ({{seeg}}) recordings},
   volume = {183},
   issn = {1053-8119},
   journal = {NeuroImage},
@@ -351,10 +349,10 @@ year={1998}}
 }
 
 @article{sedghamiz2018,
-  title = {{{BioSigKit}}: {{A Matlab Toolbox}} and {{Interface}} for {{Analysis}} of {{BioSignals}}},
+ title = {{{biosigkit}}: {{a matlab toolbox}} and {{interface}} for {{analysis}} of {{biosignals}}},
   volume = {3},
   issn = {2475-9066},
-  shorttitle = {{{BioSigKit}}},
+ title = {{{biosigkit}}},
   number = {30},
   journal = {Journal of Open Source Software},
   doi = {10/gf62fp},
@@ -365,9 +363,9 @@ year={1998}}
 }
 
 @article{storey2003,
-  title = {Statistical Significance for Genomewide Studies},
+ title = {Statistical significance for genomewide studies},
   volume = {100},
-  copyright = {Copyright \textcopyright{} 2003, The National Academy of  Sciences},
+  copyright = {Copyright 	extcopyright{} 2003, The National Academy of  Sciences},
   issn = {0027-8424, 1091-6490},
   number = {16},
   journal = {Proceedings of the National Academy of Sciences},
@@ -379,10 +377,10 @@ year={1998}}
 }
 
 @article{chang2011,
-  title = {{{LIBSVM}}: {{A Library}} for {{Support Vector Machines}}},
+ title = {{{libsvm}}: {{a library}} for {{support vector machines}}},
   volume = {2},
   issn = {2157-6904},
-  shorttitle = {{{LIBSVM}}},
+ title = {{{libsvm}}},
   number = {3},
   journal = {ACM Transactions on Intelligent Systems and Technology},
   doi = {10/gc96pc},
@@ -393,7 +391,7 @@ year={1998}}
 }
 
 @article{andersen2002,
-  title = {Intentional {{Maps}} in {{Posterior Parietal Cortex}}},
+ title = {Intentional {{maps}} in {{posterior parietal cortex}}},
   volume = {25},
   number = {1},
   journal = {Annual Review of Neuroscience},
@@ -404,7 +402,7 @@ year={1998}}
 }
 
 @article{coon2016,
-  title = {Oscillatory Phase Modulates the Timing of Neuronal Activations and Resulting Behavior},
+ title = {Oscillatory phase modulates the timing of neuronal activations and resulting behavior},
   volume = {133},
   issn = {1053-8119},
   journal = {NeuroImage},
@@ -416,7 +414,7 @@ year={1998}}
 }
 
 @article{coon2016a,
-  title = {A Method to Establish the Spatiotemporal Evolution of Task-Related Cortical Activity from Electrocorticographic Signals in Single Trials},
+ title = {A method to establish the spatiotemporal evolution of task-related cortical activity from electrocorticographic signals in single trials},
   volume = {271},
   journal = {Journal of Neuroscience Methods},
   doi = {10/f829z5},
@@ -426,21 +424,20 @@ year={1998}}
 }
 
 @article{townsend2011a,
-  title = {Grasp {{Movement Decoding}} from {{Premotor}} and {{Parietal Cortex}}},
+ title = {Grasp {{movement decoding}} from {{premotor}} and {{parietal cortex}}},
   volume = {31},
-  copyright = {Copyright \textcopyright{} 2011 the authors 0270-6474/11/3114386-13\$15.00/0},
-  issn = {0270-6474, 1529-2401},
+  copyright = {Copyright 	extcopyright{} 2011 the authors 0270-6474/11/3114386-13  issn = {0270-6474, 1529-2401},
   number = {40},
   journal = {Journal of Neuroscience},
   doi = {10/fhwj8m},
-  author = {Townsend, Benjamin R. and Subasi, Erk and Scherberger, Hansj{\"o}rg},
+  author = {Townsend, Benjamin R. and Subasi, Erk and Scherberger, Hansj{"o}rg},
   month = oct,
   year = {2011},
   pages = {14386-14398}
 }
 
 @article{gallese1994,
-  title = {Deficit of Hand Preshaping after Muscimol Injection in Monkey Parietal Cortex.},
+ title = {Deficit of hand preshaping after muscimol injection in monkey parietal cortex.},
   journal = {Neuroreport: An International Journal for the Rapid Communication of Research in Neuroscience},
   doi = {10/d8qvbd},
   author = {Gallese, Vittorio and Murata, Akira and Kaseda, Masakazu and Niki, Nanako and Sakata, Hideo},
@@ -448,7 +445,7 @@ year={1998}}
 }
 
 @article{iwamura1996,
-  title = {Representation of Reaching and Grasping in the Monkey Postcentral Gyrus},
+ title = {Representation of reaching and grasping in the monkey postcentral gyrus},
   volume = {214},
   number = {2-3},
   journal = {Neuroscience letters},
@@ -459,7 +456,7 @@ year={1998}}
 }
 
 @article{cohen2002,
-  title = {A Common Reference Frame for Movement Plans in the Posterior Parietal Cortex},
+ title = {A common reference frame for movement plans in the posterior parietal cortex},
   volume = {3},
   number = {7},
   journal = {Nature Reviews Neuroscience},
@@ -470,7 +467,7 @@ year={1998}}
 }
 
 @article{lui2008,
-  title = {Neural Substrates for Observing and Imagining Non-Object-Directed Actions},
+ title = {Neural substrates for observing and imagining non-object-directed actions},
   volume = {3},
   number = {3-4},
   journal = {Social neuroscience},
@@ -481,18 +478,18 @@ year={1998}}
 }
 
 @article{grezes1998,
-  title = {Top down Effect of Strategy on the Perception of Human Biological Motion: {{A PET}} Investigation},
+ title = {Top down effect of strategy on the perception of human biological motion: {{a pet}} investigation},
   volume = {15},
   number = {6-8},
   journal = {Cognitive Neuropsychology},
   doi = {10/dw2djr},
-  author = {Gr{\\`e}zes, Julie},
+  author = {Gr{\`e}zes, Julie},
   year = {1998},
   pages = {553--582}
 }
 
 @article{jeannerod1995,
-  title = {Grasping Objects: The Cortical Mechanisms of Visuomotor Transformation},
+ title = {Grasping objects: the cortical mechanisms of visuomotor transformation},
   volume = {18},
   number = {7},
   journal = {Trends in neurosciences},
@@ -503,7 +500,7 @@ year={1998}}
 }
 
 @article{rizzolatti2001,
-  title = {The Cortical Motor System},
+ title = {The cortical motor system},
   volume = {31},
   number = {6},
   journal = {Neuron},
@@ -514,7 +511,7 @@ year={1998}}
 }
 
 @article{lebedev2002,
-  title = {Insights into Seeing and Grasping: Distinguishing the Neural Correlates of Perception and Action},
+ title = {Insights into seeing and grasping: distinguishing the neural correlates of perception and action},
   volume = {1},
   number = {2},
   journal = {Behavioral and cognitive neuroscience reviews},
@@ -524,28 +521,28 @@ year={1998}}
 }
 
 @article{schaffelhofer2016,
-  title = {Object Vision to Hand Action in Macaque Parietal, Premotor, and Motor Cortices},
+ title = {Object vision to hand action in macaque parietal, premotor, and motor cortices},
   volume = {5},
   journal = {Elife},
   doi = {10/gf6252},
-  author = {Schaffelhofer, Stefan and Scherberger, Hansj{\"o}rg},
+  author = {Schaffelhofer, Stefan and Scherberger, Hansj{"o}rg},
   year = {2016},
   pages = {e15278}
 }
 
 @article{baumann2009,
-  title = {Context-Specific Grasp Movement Representation in the Macaque Anterior Intraparietal Area},
+ title = {Context-specific grasp movement representation in the macaque anterior intraparietal area},
   volume = {29},
   number = {20},
   journal = {Journal of Neuroscience},
   doi = {10/cnjpdr},
-  author = {Baumann, Markus A and Fluet, Marie-Christine and Scherberger, Hansj{\"o}rg},
+  author = {Baumann, Markus A and Fluet, Marie-Christine and Scherberger, Hansj{"o}rg},
   year = {2009},
   pages = {6436--6448}
 }
 
 @article{mountcastle1975,
-  title = {Posterior Parietal Association Cortex of the Monkey: Command Functions for Operations within Extrapersonal Space},
+ title = {Posterior parietal association cortex of the monkey: command functions for operations within extrapersonal space},
   volume = {38},
   number = {4},
   journal = {Journal of Neurophysiology},
@@ -556,7 +553,7 @@ year={1998}}
 }
 
 @article{sakata1995,
-  title = {Neural Mechanisms of Visual Guidance of Hand Action in the Parietal Cortex of the Monkey},
+ title = {Neural mechanisms of visual guidance of hand action in the parietal cortex of the monkey},
   volume = {5},
   number = {5},
   journal = {Cerebral Cortex},
@@ -567,7 +564,7 @@ year={1998}}
 }
 
 @article{sakata1997,
-  title = {The {{TINS Lecture The}} Parietal Association Cortex in Depth Perception and Visual Control of Hand Action},
+ title = {The {{tins lecture the}} parietal association cortex in depth perception and visual control of hand action},
   volume = {20},
   number = {8},
   journal = {Trends in neurosciences},
@@ -578,18 +575,18 @@ year={1998}}
 }
 
 @article{binkofski1998,
-  title = {Human Anterior Intraparietal Area Subserves Prehension: A Combined Lesion and Functional {{MRI}} Activation Study},
+ title = {Human anterior intraparietal area subserves prehension: a combined lesion and functional {{mri}} activation study},
   volume = {50},
   number = {5},
   journal = {Neurology},
   doi = {10/gf6254},
-  author = {Binkofski, Ferdinand and Dohle, Christian and Posse, Stefan and Stephan, Klaus Martin and Hefter, Harald and Seitz, R{\"u}diger J and Freund, Hans-Joachim},
+  author = {Binkofski, Ferdinand and Dohle, Christian and Posse, Stefan and Stephan, Klaus Martin and Hefter, Harald and Seitz, R{"u}diger J and Freund, Hans-Joachim},
   year = {1998},
   pages = {1253--1259}
 }
 
 @article{nakanishi2014,
-  title = {Decoding Fingertip Trajectory from Electrocorticographic Signals in Humans},
+ title = {Decoding fingertip trajectory from electrocorticographic signals in humans},
   volume = {85},
   journal = {Neuroscience research},
   doi = {10.1016/j.neures.2014.05.005},
@@ -599,7 +596,7 @@ year={1998}}
 }
 
 @article{nakanishi2017,
-  title = {Mapping {{ECoG}} Channel Contributions to Trajectory and Muscle Activity Prediction in Human Sensorimotor Cortex},
+ title = {Mapping {{ecog}} channel contributions to trajectory and muscle activity prediction in human sensorimotor cortex},
   volume = {7},
   copyright = {2017 Nature Publishing Group},
   issn = {2045-2322},
@@ -612,7 +609,7 @@ year={1998}}
 }
 
 @article{vingerhoets2014,
-  title = {Contribution of the Posterior Parietal Cortex in Reaching, Grasping, and Using Objects and Tools},
+ title = {Contribution of the posterior parietal cortex in reaching, grasping, and using objects and tools},
   volume = {5},
   issn = {1664-1078},
   journal = {Frontiers in Psychology},
@@ -623,7 +620,7 @@ year={1998}}
 }
 
 @article{hu2018,
-  title = {Decoding Unconstrained Arm Movements in Primates Using High-Density Electrocorticography Signals for Brain-Machine Interface Use},
+ title = {Decoding unconstrained arm movements in primates using high-density electrocorticography signals for brain-machine interface use},
   volume = {8},
   copyright = {2018 The Author(s)},
   issn = {2045-2322},
@@ -638,7 +635,7 @@ year={1998}}
 }
 
 @article{wang2013,
-  title = {An {{Electrocorticographic Brain Interface}} in an {{Individual}} with {{Tetraplegia}}},
+ title = {An {{electrocorticographic brain interface}} in an {{individual}} with {{tetraplegia}}},
   volume = {8},
   issn = {1932-6203},
   number = {2},
@@ -651,7 +648,7 @@ year={1998}}
 }
 
 @article{bundy2016,
-  title = {Decoding Three-Dimensional Reaching Movements Using Electrocorticographic Signals in Humans},
+ title = {Decoding three-dimensional reaching movements using electrocorticographic signals in humans},
   volume = {13},
   number = {2},
   journal = {Journal of Neural Engineering},
@@ -661,7 +658,7 @@ year={1998}}
 }
 
 @article{talakoub2017,
-  title = {Reconstruction of Reaching Movement Trajectories Using Electrocorticographic Signals in Humans},
+ title = {Reconstruction of reaching movement trajectories using electrocorticographic signals in humans},
   volume = {12},
   number = {9},
   journal = {Plos One},
@@ -671,7 +668,7 @@ year={1998}}
 }
 
 @article{ramsey2018,
-  title = {Decoding Spoken Phonemes from Sensorimotor Cortex with High-Density {{ECoG}} Grids},
+ title = {Decoding spoken phonemes from sensorimotor cortex with high-density {{ecog}} grids},
   volume = {180},
   journal = {NeuroImage},
   doi = {10/gd7zfk},
@@ -681,7 +678,7 @@ year={1998}}
 }
 
 @article{moses2019,
-  title = {Real-Time Decoding of Question-and-Answer Speech Dialogue Using Human Cortical Activity},
+ title = {Real-time decoding of question-and-answer speech dialogue using human cortical activity},
   volume = {10},
   issn = {2041-1723},
   number = {1},
@@ -694,7 +691,7 @@ year={1998}}
 }
 
 @article{lehmann2013,
-  title = {Reach and {{Gaze Representations}} in {{Macaque Parietal}} and {{Premotor Grasp Areas}}},
+ title = {Reach and {{gaze representations}} in {{macaque parietal}} and {{premotor grasp areas}}},
   volume = {33},
   issn = {0270-6474, 1529-2401},
   number = {16},
@@ -707,23 +704,23 @@ year={1998}}
 }
 
 @article{menz2015,
-  title = {Representation of Continuous Hand and Arm Movements in Macaque Areas {{M1}}, {{F5}}, and {{AIP}}: A Comparative Decoding Study},
+ title = {Representation of continuous hand and arm movements in macaque areas {{m1}}, {{f5}}, and {{aip}}: a comparative decoding study},
   volume = {12},
   issn = {1741-2560, 1741-2552},
-  shorttitle = {Representation of Continuous Hand and Arm Movements in Macaque Areas {{M1}}, {{F5}}, and {{AIP}}},
+ title = {Representation of continuous hand and arm movements in macaque areas {{m1}}, {{f5}}, and {{aip}}},
   number = {5},
   journal = {Journal of Neural Engineering},
   doi = {10/gf625z},
-  author = {Menz, Veera Katharina and Schaffelhofer, Stefan and Scherberger, Hansj{\"o}rg},
+  author = {Menz, Veera Katharina and Schaffelhofer, Stefan and Scherberger, Hansj{"o}rg},
   month = oct,
   year = {2015},
   pages = {056016}
 }
 
 @article{yanagisawa2012,
-  title = {Electrocorticographic Control of a Prosthetic Arm in Paralyzed Patients},
+ title = {Electrocorticographic control of a prosthetic arm in paralyzed patients},
   volume = {71},
-  copyright = {Copyright \textcopyright{} 2011 American Neurological Association},
+  copyright = {Copyright 	extcopyright{} 2011 American Neurological Association},
   issn = {1531-8249},
   number = {3},
   journal = {Annals of Neurology},
@@ -734,8 +731,8 @@ year={1998}}
 }
 
 @inproceedings{li2017,
-  title = {A Preliminary Study towards Prosthetic Hand Control Using Human Stereo-Electroencephalography ({{SEEG}}) Signals},
-  booktitle = {2017 8th {{International IEEE}}/{{EMBS Conference}} on {{Neural Engineering}} ({{NER}})},
+ title = {A preliminary study towards prosthetic hand control using human stereo-electroencephalography ({{seeg}}) signals},
+ title = {2017 8th {{international ieee}}/{{embs conference}} on {{neural engineering}} ({{ner}})},
   doi = {10/gf8sx8},
   author = {Li, G. and Jiang, S. and Xu, Y. and Wu, Z. and Chen, L. and Zhang, D.},
   month = may,
@@ -744,7 +741,7 @@ year={1998}}
 }
 
 @article{murata2000,
-  title = {Selectivity for the Shape, Size, and Orientation of Objects for Grasping in Neurons of Monkey Parietal Area {{AIP}}.},
+ title = {Selectivity for the shape, size, and orientation of objects for grasping in neurons of monkey parietal area {{aip}}.},
   volume = {83},
   number = {5},
   journal = {Journal of Neurophysiology},
@@ -755,13 +752,13 @@ year={1998}}
 }
 
 @article{nakamura2004,
-  title = {Cooperation of Different Neuronal Systems during Hand Sign Recognition},
+ title = {Cooperation of different neuronal systems during hand sign recognition},
   volume = {23},
   issn = {1053-8119},
   number = {1},
   journal = {NeuroImage},
   doi = {10/cscnrx},
-  author = {Nakamura, Akinori and Maess, Burkhard and Kn{\"o}sche, Thomas R. and Gunter, Thomas C. and Bach, Patric and Friederici, Angela D.},
+  author = {Nakamura, Akinori and Maess, Burkhard and Kn{"o}sche, Thomas R. and Gunter, Thomas C. and Bach, Patric and Friederici, Angela D.},
   month = sep,
   year = {2004},
   pages = {25-34}
@@ -769,8 +766,8 @@ year={1998}}
 
 @misc{li2017a,
   type = {Research Article},
-  title = {Gesture {{Decoding Using ECoG Signals}} from {{Human Sensorimotor Cortex}}: {{A Pilot Study}}},
-  shorttitle = {Gesture {{Decoding Using ECoG Signals}} from {{Human Sensorimotor Cortex}}},
+ title = {Gesture {{decoding using ecog signals}} from {{human sensorimotor cortex}}: {{a pilot study}}},
+ title = {Gesture {{decoding using ecog signals}} from {{human sensorimotor cortex}}},
   journal = {Behavioural Neurology},
   howpublished = {https://www.hindawi.com/journals/bn/2017/3435686/},
   author = {Li, Yue and Zhang, Shaomin and Jin, Yile and Cai, Bangyu and Controzzi, Marco and Zhu, Junming and Zhang, Jianmin and Zheng, Xiaoxiang},
@@ -779,10 +776,10 @@ year={1998}}
 }
 
 @article{begliomini2007,
-  title = {Comparing {{Natural}} and {{Constrained Movements}}: {{New Insights}} into the {{Visuomotor Control}} of {{Grasping}}},
+ title = {Comparing {{natural}} and {{constrained movements}}: {{new insights}} into the {{visuomotor control}} of {{grasping}}},
   volume = {2},
   issn = {1932-6203},
-  shorttitle = {Comparing {{Natural}} and {{Constrained Movements}}},
+ title = {Comparing {{natural}} and {{constrained movements}}},
   number = {10},
   journal = {Plos One},
   doi = {10.1371/journal.pone.0001108},
@@ -793,7 +790,7 @@ year={1998}}
 }
 
 @article{dibono2015,
-  title = {Probing the Reaching\textendash{}Grasping Network in Humans through Multivoxel Pattern Decoding},
+ title = {Probing the reaching	extendash{}grasping network in humans through multivoxel pattern decoding},
   volume = {5},
   issn = {2162-3279},
   number = {11},
@@ -805,17 +802,17 @@ year={1998}}
 }
 
 @misc{zotero-933,
-  title = {Which Brain Areas Are Responsible for Which Aspects of Grasping? | {{JOV}} | {{ARVO Journals}}},
+ title = {Which brain areas are responsible for which aspects of grasping? | {{jov}} | {{arvo journals}}},
   howpublished = {https://jov.arvojournals.org/article.aspx?articleid=2750343}
 }
 
 @misc{zotero-934,
-  title = {Executed and {{Observed Movements Have Different Distributed Representations}} in {{Human aIPS}} | {{Journal}} of {{Neuroscience}}},
+ title = {Executed and {{observed movements have different distributed representations}} in {{human aips}} | {{journal}} of {{neuroscience}}},
   howpublished = {https://www.jneurosci.org/content/28/44/11231}
 }
 
 @article{johnson-frey2005,
-  title = {A {{Distributed Left Hemisphere Network Active During Planning}} of {{Everyday Tool Use Skills}}},
+ title = {A {{distributed left hemisphere network active during planning}} of {{everyday tool use skills}}},
   volume = {15},
   issn = {1047-3211},
   number = {6},
@@ -828,11 +825,11 @@ year={1998}}
 }
 
 @article{buccino2001,
-  title = {Action Observation Activates Premotor and Parietal Areas in a Somatotopic Manner: An {{fMRI}} Study},
+ title = {Action observation activates premotor and parietal areas in a somatotopic manner: an {{fmri}} study},
   volume = {13},
-  copyright = {\textcopyright{} Federation of European Neuroscience Societies},
+  copyright = {	extcopyright{} Federation of European Neuroscience Societies},
   issn = {1460-9568},
-  shorttitle = {Action Observation Activates Premotor and Parietal Areas in a Somatotopic Manner},
+ title = {Action observation activates premotor and parietal areas in a somatotopic manner},
   number = {2},
   journal = {European Journal of Neuroscience},
   doi = {10/bnfs53},
@@ -842,7 +839,7 @@ year={1998}}
 }
 
 @article{fridman2006a,
-  title = {The Role of the Dorsal Stream for Gesture Production},
+ title = {The role of the dorsal stream for gesture production},
   volume = {29},
   issn = {1053-8119},
   number = {2},
@@ -855,10 +852,9 @@ year={1998}}
 }
 
 @article{fabbri2016,
-  title = {Disentangling {{Representations}} of {{Object}} and {{Grasp Properties}} in the {{Human Brain}}},
+ title = {Disentangling {{representations}} of {{object}} and {{grasp properties}} in the {{human brain}}},
   volume = {36},
-  copyright = {Copyright \textcopyright{} 2016 the authors 0270-6474/16/367648-15\$15.00/0},
-  issn = {0270-6474, 1529-2401},
+  copyright = {Copyright 	extcopyright{} 2016 the authors 0270-6474/16/367648-15  issn = {0270-6474, 1529-2401},
   number = {29},
   journal = {Journal of Neuroscience},
   doi = {10/f8z4st},
@@ -869,7 +865,7 @@ year={1998}}
 }
 
 @article{cramer2005,
-  title = {Brain Motor System Function after Chronic, Complete Spinal Cord Injury},
+ title = {Brain motor system function after chronic, complete spinal cord injury},
   volume = {128},
   issn = {1460-2156},
   number = {Pt 12},
@@ -882,7 +878,7 @@ year={1998}}
 }
 
 @article{kikkert2016,
-  title = {Revealing the Neural Fingerprints of a Missing Hand},
+ title = {Revealing the neural fingerprints of a missing hand},
   volume = {5},
   issn = {2050-084X},
   journal = {Elife},
@@ -891,10 +887,9 @@ year={1998}}
   month = aug,
   year = {2016}
 }
-%add by GYL
 @article{Ding2018,
    author = {Ding, Z. and Huang, Y. and Bailey, S. K. and Gao, Y. and Cutting, L. E. and Rogers, B. P. and Newton, A. T. and Gore, J. C.},
-   title = {Detection of synchronous brain activity in white matter tracts at rest and under functional loading},
+ title = {Detection of synchronous brain activity in white matter tracts at rest and under functional loading},
    journal = {Proceedings of the National Academy of Sciences},
    volume = {115},
    number = {3},
@@ -908,7 +903,7 @@ year={1998}}
 }
 @article{Mercier2017,
    author = {Mercier, M. R. and Bickel, S. and Megevand, P. and Groppe, D. M. and Schroeder, C. E. and Mehta, A. D. and Lado, F. A.},
-   title = {Evaluation of cortical local field potential diffusion in stereotactic electro-encephalography recordings: A glimpse on white matter signal},
+ title = {Evaluation of cortical local field potential diffusion in stereotactic electro-encephalography recordings: a glimpse on white matter signal},
    journal = {NeuroImage},
    volume = {147},
    pages = {219-232},
@@ -921,7 +916,7 @@ year={1998}}
 }
 @article{Salat2009,
    author = {Salat, D. H. and Lee, S. Y. and van der Kouwe, A. J. and Greve, D. N. and Fischl, B. and Rosas, H. D.},
-   title = {Age-associated alterations in cortical gray and white matter signal intensity and gray to white matter contrast},
+ title = {Age-associated alterations in cortical gray and white matter signal intensity and gray to white matter contrast},
    journal = {NeuroImage},
    volume = {48},
    number = {1},
@@ -934,7 +929,7 @@ year={1998}}
    type = {Journal Article}
 }
 @article{Pfurtscheller206,
-	Author = {Pfurtscheller, G. and Brunner, C. and Schl{\"o}gl, A. and Lopes da Silva, F. H.},
+	Author = {Pfurtscheller, G. and Brunner, C. and Schl{"o}gl, A. and Lopes da Silva, F. H.},
 	Doi = {https://doi.org/10.1016/j.neuroimage.2005.12.003},
 	Issn = {1053-8119},
 	Journal = {NeuroImage},
@@ -950,7 +945,7 @@ year={1998}}
 
 @article{Parvizi2018,
    author = {Parvizi, J. and Kastner, S.},
-   title = {Promises and limitations of human intracranial electroencephalography},
+ title = {Promises and limitations of human intracranial electroencephalography},
    journal = {Nature Neuroscience},
    volume = {21},
    number = {4},
@@ -965,7 +960,7 @@ year={1998}}
 
 @article{Wessberg2000,
    author = {Wessberg, Johan and Stambaugh, Christopher R. and Kralik, Jerald D. and Beck, Pamela D. and Laubach, Mark and Chapin, John K. and Kim, Jung and Biggs, S. James and Srinivasan, Mandayam A. and Nicolelis, Miguel A. L.},
-   title = {Real-time prediction of hand trajectory by ensembles of cortical neurons in primates},
+ title = {Real-time prediction of hand trajectory by ensembles of cortical neurons in primates},
    journal = {Nature},
    volume = {408},
    pages = {361},
@@ -977,7 +972,7 @@ https://www.nature.com/articles/35042582#supplementary-information},
 }
 
 @article{kubanek2009,
-  title = {Decoding Flexion of Individual Fingers Using Electrocorticographic Signals in Humans},
+ title = {Decoding flexion of individual fingers using electrocorticographic signals in humans},
   volume = {6},
   issn = {1741-2560},
   number = {6},
@@ -991,7 +986,7 @@ https://www.nature.com/articles/35042582#supplementary-information},
 
 @article{Arnal2019,
    author = {Arnal, L. H. and Kleinschmidt, A. and Spinelli, L. and Giraud, A. L. and Megevand, P.},
-   title = {The rough sound of salience enhances aversion through neural synchronisation},
+ title = {The rough sound of salience enhances aversion through neural synchronisation},
    journal = {Nature Communication},
    volume = {10},
    number = {1},
@@ -1005,7 +1000,7 @@ https://www.nature.com/articles/35042582#supplementary-information},
 }
 @article{Bartolomei2018,
    author = {Bartolomei, F. and Nica, A. and Valenti-Hirsch, M. P. and Adam, C. and Denuelle, M.},
-   title = {Interpretation of {SEEG} recordings},
+ title = {Interpretation of {seeg} recordings},
    journal = {Clinical Neurophysiology},
    volume = {48},
    number = {1},
@@ -1019,16 +1014,15 @@ https://www.nature.com/articles/35042582#supplementary-information},
 }
 @article{LiJNE2019,
    author = {Li, Guangye and Jiang, Shize and Chen, Chen and Brunner, Peter and Wu, Zehan and Schalk, Gerwin and Chen, Liang and Zhang, Dingguo},
-   title = {{iEEGview}: An open-source multifunction {GUI-based} {Matlab} toolbox for localization and visualization of human intracranial electrodes},
+ title = {{ieegview}: an open-source multifunction {gui-based} {matlab} toolbox for localization and visualization of human intracranial electrodes},
    journal = {Journal of Neural Engineering},
    ISSN = {1741-2552},
    url = {http://iopscience.iop.org/10.1088/1741-2552/ab51a5},
    year = {2019},
    type = {Journal Article}
 }
-%
 @article{fifer2014,
-  title = {Simultaneous Neural Control of Simple Reaching and Grasping with the Modular Prosthetic Limb Using Intracranial {{EEG}}},
+ title = {Simultaneous neural control of simple reaching and grasping with the modular prosthetic limb using intracranial {{eeg}}},
   volume = {22},
   issn = {1558-0210 (Electronic) 1534-4320 (Linking)},
   number = {3},
@@ -1041,7 +1035,7 @@ https://www.nature.com/articles/35042582#supplementary-information},
   pages = {695-705}
 }
 @article{acharya2010,
-  title = {Electrocorticographic Amplitude Predicts Finger Positions during Slow Grasping Motions of the Hand},
+ title = {Electrocorticographic amplitude predicts finger positions during slow grasping motions of the hand},
   volume = {7},
   number = {4},
   journal = {Journal of Neural Engineering},
@@ -1051,7 +1045,7 @@ https://www.nature.com/articles/35042582#supplementary-information},
   keywords = {Adult,Female,Humans,Male,Adolescent,Young Adult,Middle Aged,*Algorithms,Evoked Potentials; Motor/*physiology,Movement/*physiology,Electrocardiography/*methods,Fingers/*physiology,Hand Strength/*physiology,Posture/*physiology}
 }
 @article{pistohl2012,
-  title = {Decoding Natural Grasp Types from Human {{ECoG}}},
+ title = {Decoding natural grasp types from human {{ecog}}},
   volume = {59},
   number = {1},
   journal = {NeuroImage},
@@ -1062,7 +1056,7 @@ https://www.nature.com/articles/35042582#supplementary-information},
   ids = {pistohl2012}
 }
 @article{chestek2013,
-  title = {Hand Posture Classification Using Electrocorticography Signals in the Gamma Band over Human Sensorimotor Brain Areas},
+ title = {Hand posture classification using electrocorticography signals in the gamma band over human sensorimotor brain areas},
   volume = {10},
   issn = {1741-2552 (Electronic) 1741-2552 (Linking)},
   number = {2},
@@ -1075,7 +1069,7 @@ https://www.nature.com/articles/35042582#supplementary-information},
   pages = {026002}
 }
 @article{bleichner2014,
-  title = {Give Me a Sign: Decoding Four Complex Hand Gestures Based on High-Density {{ECoG}}},
+ title = {Give me a sign: decoding four complex hand gestures based on high-density {{ecog}}},
   volume = {221},
   issn = {1863-2661 (Electronic) 1863-2653 (Linking)},
   number = {1},
@@ -1088,7 +1082,7 @@ https://www.nature.com/articles/35042582#supplementary-information},
   pages = {203-16}
 }
 @article{spueler2014,
-  title = {Decoding of Motor Intentions from Epidural {{ECoG}} Recordings in Severely Paralyzed Chronic Stroke Patients},
+ title = {Decoding of motor intentions from epidural {{ecog}} recordings in severely paralyzed chronic stroke patients},
   volume = {11},
   issn = {1741-2560},
   number = {6},
@@ -1100,7 +1094,7 @@ https://www.nature.com/articles/35042582#supplementary-information},
   ids = {spuelerDecodingMotorIntentions2014a}
 }
 @article{dibono2015,
-  title = {Probing the Reaching\textendash{}Grasping Network in Humans through Multivoxel Pattern Decoding},
+ title = {Probing the reaching	extendash{}grasping network in humans through multivoxel pattern decoding},
   volume = {5},
   issn = {2162-3279},
   number = {11},
@@ -1113,7 +1107,7 @@ https://www.nature.com/articles/35042582#supplementary-information},
 }
 @article{dinstein2008,
   langid = {english},
-  title = {Executed and {{Observed Movements Have Different Distributed Representations}} in {{Human aIPS}}},
+ title = {Executed and {{observed movements have different distributed representations}} in {{human aips}}},
   volume = {28},
   issn = {0270-6474, 1529-2401},
   doi = {10.1523/JNEUROSCI.3585-08.2008},
@@ -1129,20 +1123,20 @@ https://www.nature.com/articles/35042582#supplementary-information},
   eprint = {18971465}
 }
 @article{townsend2011,
-  title = {Grasp {{Movement Decoding}} from {{Premotor}} and {{Parietal Cortex}}},
+ title = {Grasp {{movement decoding}} from {{premotor}} and {{parietal cortex}}},
   volume = {31},
   issn = {0270-6474, 1529-2401},
   language = {en},
   number = {40},
   journal = {Journal of Neuroscience},
   doi = {10/fhwj8m},
-  author = {Townsend, Benjamin R. and Subasi, Erk and Scherberger, Hansj{\"o}rg},
+  author = {Townsend, Benjamin R. and Subasi, Erk and Scherberger, Hansj{"o}rg},
   month = oct,
   year = {2011},
   pages = {14386-14398}
 }
 @article{jeannerod1995,
-  title = {Grasping Objects: The Cortical Mechanisms of Visuomotor Transformation},
+ title = {Grasping objects: the cortical mechanisms of visuomotor transformation},
   volume = {18},
   number = {7},
   journal = {Trends in neurosciences},
@@ -1152,17 +1146,17 @@ https://www.nature.com/articles/35042582#supplementary-information},
   pages = {314--320}
 }
 @article{schaffelhofer2016,
-  title = {Object Vision to Hand Action in Macaque Parietal, Premotor, and Motor Cortices},
+ title = {Object vision to hand action in macaque parietal, premotor, and motor cortices},
   volume = {5},
   journal = {Elife},
   doi = {10/gf6252},
-  author = {Schaffelhofer, Stefan and Scherberger, Hansj{\"o}rg},
+  author = {Schaffelhofer, Stefan and Scherberger, Hansj{"o}rg},
   year = {2016},
   pages = {e15278}
 }
 @article{Caruana2017,
    author = {Caruana, F. and Avanzini, P. and Mai, R. and Pelliccia, V. and LoRusso, G. and Rizzolatti, G. and Orban, G. A.},
-   title = {Decomposing Tool-Action Observation: A Stereo-EEG Study},
+ title = {Decomposing tool-action observation: a stereo-eeg study},
    journal = {Cerebral Cortex},
    volume = {27},
    number = {8},
@@ -1176,12 +1170,12 @@ https://www.nature.com/articles/35042582#supplementary-information},
 }
 @article{hotson2016,
   langid = {english},
-  title = {Individual Finger Control of a Modular Prosthetic Limb Using High-Density Electrocorticography in a Human Subject},
+ title = {Individual finger control of a modular prosthetic limb using high-density electrocorticography in a human subject},
   volume = {13},
   issn = {1741-2560, 1741-2552},
   doi = {10.1088/1741-2560/13/2/026017},
   number = {2},
-  journaltitle = {Journal of Neural Engineering},
+ title = {Journal of neural engineering},
   shortjournal = {J. Neural Eng.},
   date = {2016-04-01},
   year = {2016},
@@ -1190,7 +1184,7 @@ https://www.nature.com/articles/35042582#supplementary-information},
 }
 @article{Sun2015,
    author = {Sun, H. and Blakely, T. M. and Darvas, F. and Wander, J. D. and Johnson, L. A. and Su, D. K. and Miller, K. J. and Fetz, E. E. and Ojemann, J. G.},
-   title = {Sequential activation of premotor, primary somatosensory and primary motor areas in humans during cued finger movements},
+ title = {Sequential activation of premotor, primary somatosensory and primary motor areas in humans during cued finger movements},
    journal = {Clinical Neurophysiology},
    volume = {126},
    number = {11},
