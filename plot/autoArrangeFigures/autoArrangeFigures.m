@@ -33,7 +33,7 @@ if nargin < 2
     monitor_id = 1;
 end
 
-task_bar_offset = [30 50];
+task_bar_offset = [30 30];
 
 %%
 N_FIG = NH * NW;
@@ -48,11 +48,17 @@ if n_fig <= 0
     warning('figures are not found');
     return
 end
-% if strcmpi(getenv('computername'),'GLIA')
+% if strcmpi(getenv('computername'),'GLIA') | strcmpi(getenv('computername'),'WORKSTATION')
 %     screen_sz = [1 1 1920 1080];
 % else
-screen_sz = get(0,'MonitorPositions');
-screen_sz = screen_sz(monitor_id, :);
+screen_sz1 = get(0,'MonitorPositions');
+screen_sz2 = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+if screen_sz1(3:4) == [screen_sz2.width screen_sz2.height]
+    screen_sz = [1 1 screen_sz1.width screen_sz1.height];
+else%usually 1 is smaller than 2
+    screen_sz = [1 screen_sz1(4)-screen_sz2.height screen_sz2.width screen_sz2.height];
+end
+%still unsure why matlab could not correctly map the height of the screen
 % end
 scn_w = screen_sz(3) - task_bar_offset(1);
 scn_h = screen_sz(4) - task_bar_offset(2);
@@ -98,9 +104,9 @@ for i=1:1:nh
             return
         end
         fig_pos = [scn_w_begin+fig_width*(k-1) ...
-            scn_h_begin+scn_h-fig_height*i ...
+            scn_h_begin+(nh-i)*fig_height ...
             fig_width ...
-            fig_height];
+            fig_height]
         set(figHandle(fig_cnt),'OuterPosition',fig_pos);
         fig_cnt = fig_cnt + 1;
     end
