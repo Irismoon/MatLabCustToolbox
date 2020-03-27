@@ -6,11 +6,11 @@ function [ mFiles ] = FileRangTraversal( strPath )
     mFiles = cell(0,0);
     mPath  = cell(0,0);
     
-    mPath{1}=strPath;
+    mPath{1} = strPath;
     [r,c] = size(mPath);
     while c ~= 0
         strPath = mPath{1};
-        Files = dir(fullfile( strPath,'*.*'));
+        Files = dir(fullfile( strPath));
         LengthFiles = length(Files);
         if LengthFiles == 0
             break;

@@ -35,8 +35,10 @@ layout = p.Results.layout;
 plotstyle = p.Results.plotstyle;
 
 global fs;
-
-if abs(ndims(x)-2)<1e-6
+if abs(ndims(x)-ndims(stdx))<1e-6
+    stdx = reshape(stdx,sz(1),1,sz(2),sz(3));
+end
+if ismatrix(x)
     x = reshape(x,sz(1),sz(2),1);
 end
 sz = size(x);

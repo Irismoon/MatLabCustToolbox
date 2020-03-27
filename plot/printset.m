@@ -1,4 +1,5 @@
 function printset(varargin)
+%to minimize the margin between figure window and axes window
 if isempty(varargin)
     fig=gcf;
 else
