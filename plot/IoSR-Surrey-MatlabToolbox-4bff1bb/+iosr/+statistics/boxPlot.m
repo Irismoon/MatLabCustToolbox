@@ -17,6 +17,176 @@ classdef (CaseInsensitiveProperties = true) boxPlot < iosr.statistics.statsPlot
 %   
 %   IOSR.STATISTICS.BOXPLOT properties:
 %     Plotting options:
+%%%% general theme %%%%%
+%       theme               - Specify a display theme to change multiple
+%                             display properties. The options are:
+%                                 'colorall'    : colored boxes (with 0.4 
+%                                                 alpha), lines, and
+%                                                 scatter markers (median
+%                                                 line and mean marker are
+%                                                 black)
+%                                 'colorlines'  : clear boxes, black mean
+%                                                 markers, colored lines
+%                                                 and scatter markers
+%                                 'colorboxes'  : colored boxes, black
+%                                                 lines and markers, gray
+%                                                 scatter markers
+%                                 'default'     : clear boxes, colored
+%                                                 median lines and markers,
+%                                                 gray scatter markers
+%                             Use the 'themeColors' property to specify the
+%                             color(s) that are used.
+%       themeColors           Colors used when creating the theme. The
+%                             default is 'auto' (see boxColor).
+%%%% box and whisker %%%%
+%       boxAlpha            - The transparency of the boxes (0 is
+%                             transparent, 1 is opaque). The default is 1.
+%       boxColor            - Fill color of the box. The setting can be a
+%                             color specifier (3-element vector or single
+%                             character), 'auto', 'none', or a handle to a
+%                             colormap function (e.g. @gray); 'auto' means
+%                             that Matlab's default colors are used. The
+%                             default is 'none'.
+%       boxWidth            - The width of the box. The setting can be
+%                             'auto' (meaning that the width is determined
+%                             automatically) or a scalar (specifying the
+%                             width in x-axis units). The default is
+%                             'auto'.
+%       scaleWidth          - Logical value to specify scaling the width of
+%                             each box according to the square root of the
+%                             sample size. The default is false.
+%       percentile          - Percentile limits of the boxes. The default
+%                             is [25,75]. All other statistics, such as
+%                             those that depend on the IQR (e.g. whisker
+%                             extent and notch height), are unaffected by
+%                             this parameter.
+%       lineColor           - Color of the box outline and whiskers. The
+%                             default is 'k'.
+%       lineStyle           - Style of the whisker line. The default is
+%                             '-'.
+%       lineWidth           - Width, in points, of the box outline, whisker
+%                             lines, notch line, violin, and outlier marker
+%                             edges. The default is 1.
+%%%%%% mean %%%%%
+%       showMean            - Logical value determines whether to display
+%                             the mean of the data for each box. The
+%                             default is false.
+%       meanColor           - Color of the mean marker when showMean=true.
+%                             The default is 'auto' (see boxColor).
+%       meanMarker          - Marker used for the mean when showMean=true.
+%                             The default is '+'.
+%       meanSize            - Size, in point units, of the mean markers
+%                             when showMean=true. The default is 6.
+%       medianColor         - Color of the median line. The default is
+%                             'auto' (see boxColor).
+%       method              - The method used to calculate the quantiles,
+%                             labelled according to
+%                             http://en.wikipedia.org/wiki/Quantile. The
+%                             default is 'R-8' whereas the default for
+%                             Matlab is 'R-5'. See
+%                             IOSR.STATISTICS.QUANTILE.
+%%%%%% notch %%%%%
+%       notch               - Logical value indicating whether the box
+%                             should have a notch. The notch is centred on
+%                             the median and extends to ï¿½1.58*IQR/sqrt(N),
+%                             where N is the sample size (number of non-NaN
+%                             rows in Y). Generally if the notches of two
+%                             boxes do not overlap, this is evidence of a
+%                             statistically significant difference between
+%                             the medians. The default is false.
+%       notchDepth          - Depth of the notch as a proportion of half
+%                             the box width. The default is 0.4.
+%       notchLine           - Logical value specifying whether to draw a
+%                             horizontal line in the box at the extremes of
+%                             the notch. (May be specified indpendently of
+%                             'notch'.) The default is false.
+%       notchLineColor      - Color of the notch line when notchLine=true.
+%                             The default is 'k'.
+%       notchLineStyle      - Line style of the notch line when
+%                             notchLine=true. The default is ':'.
+%%% outlier %%%%%
+%       showOutliers        - Logical value determines whether to display
+%                             outliers. The default is true.
+%       symbolColor         - Outlier marker color. The default is
+%                             'auto' (see boxColor).
+%       symbolMarker        - Marker used to denote outliers. The default
+%                             is 'o'.
+%       outlierSize         - Size, in square points, of the outlier
+%                             marker. The default is 36.
+%       limit               - Mode indicating the limits that define
+%                             outliers. When set to '1.5IQR' or '3IQR', the
+%                             min and max values are Q1-Z*IQR and Q3+Z*IQR,
+%                             where Z = 1.5 or 3 respectively. When set to
+%                             'none', the min and max values are the min
+%                             and max of the data (in this case there will
+%                             be no outliers). The property may also be
+%                             specified as a two-element vector determining
+%                             the limits as percentiles (e.g. [5,95]). The
+%                             default is '1.5IQR'.
+%%%scatter, i.e., all samples %%%%
+%       showScatter         - If set to true, a scatter plot of the
+%                             underlying data for each box will be
+%                             overlayed on the plot. The data will have a
+%                             random x-axis offset with respect to the box
+%                             centre. Data that are outliers are not
+%                             included. The default is false.
+%       scatterAlpha        - Set the transparency of the scatter markers
+%                             (0 is transparent, 1 is opaque) when
+%                             showScatter=true. The default is 1.
+%       scatterColor        - Scatter marker color for scatter plots of
+%                             underlying data (if showScatter=true). The
+%                             default is [.5 .5 .5].
+%       scatterLayer        - Set the layer of scatter plots with respect
+%                             to the boxes. Can be set to 'top' or
+%                             'bottom'. The default is 'top'.
+%       scatterMarker       - Marker used for scatter plots of underlying
+%                             data (if showScatter=true). The default is
+%                             'x'.
+%       scatterSize         - Size, in square points, of the scatter
+%                             markers (if showScatter=true). The default is
+%                             36.
+%%% legend, axis, etc.%%%%
+%       showLegend          - Display a legend of the data. The labels can
+%                             be set using the 'groupLabels' option. Note
+%                             that the legend uses the box color, median
+%                             line, or violin fill color to distinguish
+%                             legend entries. If these properties do not
+%                             differ between boxes then an error will be
+%                             returned.
+%       style               - Determine whether to show additional x-axis 
+%                             labels for the data. If set to 'hierarchy',
+%                             additional hierarchical x-axis labels will be
+%                             added for the plot. The labels can be set
+%                             using the 'groupLabels' option. If set to
+%                             'normal' (default) no additional labels will
+%                             be plotted.
+%       xSeparator          - Logical value that when true adds a separator
+%                             line between x groups. The default is false.
+%       xSpacing            - Determine the x-axis spacing of boxes. By
+%                             default ('x'), the data in x are used to
+%                             determine the position of boxes on the x-axis
+%                             (when x is numeric). Alternativley, when set
+%                             to 'equal', boxes are equally-spaced, but the
+%                             data in x are used to label the axis; the
+%                             x-axis ticks are at 1:LENGTH(X).
+%%%% violin %%%%
+%       showViolin          - If true, a 'violin' [1] kernel density
+%                             outline of the data underlying each box will
+%                             be plotted. The outline is calculated using
+%                             the IOSR.STATISTICS.KERNELDENSITY function.
+%                             The default is false.
+%       violinBins          - If 'showViolin' is true, this specifes the
+%                             bins used to calculate the kernel density.
+%                             See IOSR.STATISTICS.KERNELDENSITY.
+%       violinBinWidth      - If 'showViolin' is true, this specifes the
+%                             bin width used to calculate the kernel
+%                             density. See IOSR.STATISTICS.KERNELDENSITY.
+%       violinColor         - Fill color for the violins. The default is
+%                             'none' (see boxColor).
+%       violinKernel        - If 'showViolin' is true, this specifes the
+%                             kernel used to calculate the kernel density.
+%                             See IOSR.STATISTICS.KERNELDENSITY.
+%%% other not usually used items %%%
 %       addPrctiles         - Show additional percentiles using markers and
 %                             labels. The property should be a vector of
 %                             percentiles; each percentile will be plotted
@@ -44,19 +214,6 @@ classdef (CaseInsensitiveProperties = true) boxPlot < iosr.statistics.statsPlot
 %       addPrctilesTxtSize  - Specify the font size of the additional
 %                             percentile labels. The property should be a 
 %                             numeric scalar. The default is 9.
-%       boxAlpha            - The transparency of the boxes (0 is
-%                             transparent, 1 is opaque). The default is 1.
-%       boxColor            - Fill color of the box. The setting can be a
-%                             color specifier (3-element vector or single
-%                             character), 'auto', 'none', or a handle to a
-%                             colormap function (e.g. @gray); 'auto' means
-%                             that Matlab's default colors are used. The
-%                             default is 'none'.
-%       boxWidth            - The width of the box. The setting can be
-%                             'auto' (meaning that the width is determined
-%                             automatically) or a scalar (specifying the
-%                             width in x-axis units). The default is
-%                             'auto'.
 %       groupLabelFontSize  - Specify the font size of the group labels
 %                             when the 'style' option is set to
 %                             'hierarchy'. The default is 9.
@@ -75,160 +232,12 @@ classdef (CaseInsensitiveProperties = true) boxPlot < iosr.statistics.statsPlot
 %       groupWidth          - Specify the proportion of the x-axis interval
 %                             across which each x-group of boxes should be
 %                             spread. The default is 0.75.
-%       limit               - Mode indicating the limits that define
-%                             outliers. When set to '1.5IQR' or '3IQR', the
-%                             min and max values are Q1-Z*IQR and Q3+Z*IQR,
-%                             where Z = 1.5 or 3 respectively. When set to
-%                             'none', the min and max values are the min
-%                             and max of the data (in this case there will
-%                             be no outliers). The property may also be
-%                             specified as a two-element vector determining
-%                             the limits as percentiles (e.g. [5,95]). The
-%                             default is '1.5IQR'.
-%       lineColor           - Color of the box outline and whiskers. The
-%                             default is 'k'.
-%       lineStyle           - Style of the whisker line. The default is
-%                             '-'.
-%       lineWidth           - Width, in points, of the box outline, whisker
-%                             lines, notch line, violin, and outlier marker
-%                             edges. The default is 1.
-%       meanColor           - Color of the mean marker when showMean=true.
-%                             The default is 'auto' (see boxColor).
-%       meanMarker          - Marker used for the mean when showMean=true.
-%                             The default is '+'.
-%       meanSize            - Size, in point units, of the mean markers
-%                             when showMean=true. The default is 6.
-%       medianColor         - Color of the median line. The default is
-%                             'auto' (see boxColor).
-%       method              - The method used to calculate the quantiles,
-%                             labelled according to
-%                             http://en.wikipedia.org/wiki/Quantile. The
-%                             default is 'R-8' whereas the default for
-%                             Matlab is 'R-5'. See
-%                             IOSR.STATISTICS.QUANTILE.
-%       notch               - Logical value indicating whether the box
-%                             should have a notch. The notch is centred on
-%                             the median and extends to ±1.58*IQR/sqrt(N),
-%                             where N is the sample size (number of non-NaN
-%                             rows in Y). Generally if the notches of two
-%                             boxes do not overlap, this is evidence of a
-%                             statistically significant difference between
-%                             the medians. The default is false.
-%       notchDepth          - Depth of the notch as a proportion of half
-%                             the box width. The default is 0.4.
-%       notchLine           - Logical value specifying whether to draw a
-%                             horizontal line in the box at the extremes of
-%                             the notch. (May be specified indpendently of
-%                             'notch'.) The default is false.
-%       notchLineColor      - Color of the notch line when notchLine=true.
-%                             The default is 'k'.
-%       notchLineStyle      - Line style of the notch line when
-%                             notchLine=true. The default is ':'.
-%       outlierSize         - Size, in square points, of the outlier
-%                             marker. The default is 36.
-%       percentile          - Percentile limits of the boxes. The default
-%                             is [25,75]. All other statistics, such as
-%                             those that depend on the IQR (e.g. whisker
-%                             extent and notch height), are unaffected by
-%                             this parameter.
 %       sampleFontSize      - Specify the font size of the sample size
 %                             display (if sampleSize=true). The default is
 %                             9.
 %       sampleSize          - Specify whether to display the sample size in
 %                             the top-right of each box. The default is
 %                             false.
-%       scaleWidth          - Logical value to specify scaling the width of
-%                             each box according to the square root of the
-%                             sample size. The default is false.
-%       scatterAlpha        - Set the transparency of the scatter markers
-%                             (0 is transparent, 1 is opaque) when
-%                             showScatter=true. The default is 1.
-%       scatterColor        - Scatter marker color for scatter plots of
-%                             underlying data (if showScatter=true). The
-%                             default is [.5 .5 .5].
-%       scatterLayer        - Set the layer of scatter plots with respect
-%                             to the boxes. Can be set to 'top' or
-%                             'bottom'. The default is 'top'.
-%       scatterMarker       - Marker used for scatter plots of underlying
-%                             data (if showScatter=true). The default is
-%                             'x'.
-%       scatterSize         - Size, in square points, of the scatter
-%                             markers (if showScatter=true). The default is
-%                             36.
-%       showLegend          - Display a legend of the data. The labels can
-%                             be set using the 'groupLabels' option. Note
-%                             that the legend uses the box color, median
-%                             line, or violin fill color to distinguish
-%                             legend entries. If these properties do not
-%                             differ between boxes then an error will be
-%                             returned.
-%       showMean            - Logical value determines whether to display
-%                             the mean of the data for each box. The
-%                             default is false.
-%       showOutliers        - Logical value determines whether to display
-%                             outliers. The default is true.
-%       showScatter         - If set to true, a scatter plot of the
-%                             underlying data for each box will be
-%                             overlayed on the plot. The data will have a
-%                             random x-axis offset with respect to the box
-%                             centre. Data that are outliers are not
-%                             included. The default is false.
-%       showViolin          - If true, a 'violin' [1] kernel density
-%                             outline of the data underlying each box will
-%                             be plotted. The outline is calculated using
-%                             the IOSR.STATISTICS.KERNELDENSITY function.
-%                             The default is false.
-%       style               - Determine whether to show additional x-axis 
-%                             labels for the data. If set to 'hierarchy',
-%                             additional hierarchical x-axis labels will be
-%                             added for the plot. The labels can be set
-%                             using the 'groupLabels' option. If set to
-%                             'normal' (default) no additional labels will
-%                             be plotted.
-%       symbolColor         - Outlier marker color. The default is
-%                             'auto' (see boxColor).
-%       symbolMarker        - Marker used to denote outliers. The default
-%                             is 'o'.
-%       theme               - Specify a display theme to change multiple
-%                             display properties. The options are:
-%                                 'colorall'    : colored boxes (with 0.4 
-%                                                 alpha), lines, and
-%                                                 scatter markers (median
-%                                                 line and mean marker are
-%                                                 black)
-%                                 'colorlines'  : clear boxes, black mean
-%                                                 markers, colored lines
-%                                                 and scatter markers
-%                                 'colorboxes'  : colored boxes, black
-%                                                 lines and markers, gray
-%                                                 scatter markers
-%                                 'default'     : clear boxes, colored
-%                                                 median lines and markers,
-%                                                 gray scatter markers
-%                             Use the 'themeColors' property to specify the
-%                             color(s) that are used.
-%       themeColors           Colors used when creating the theme. The
-%                             default is 'auto' (see boxColor).
-%       violinBins          - If 'showViolin' is true, this specifes the
-%                             bins used to calculate the kernel density.
-%                             See IOSR.STATISTICS.KERNELDENSITY.
-%       violinBinWidth      - If 'showViolin' is true, this specifes the
-%                             bin width used to calculate the kernel
-%                             density. See IOSR.STATISTICS.KERNELDENSITY.
-%       violinColor         - Fill color for the violins. The default is
-%                             'none' (see boxColor).
-%       violinKernel        - If 'showViolin' is true, this specifes the
-%                             kernel used to calculate the kernel density.
-%                             See IOSR.STATISTICS.KERNELDENSITY.
-%       xSeparator          - Logical value that when true adds a separator
-%                             line between x groups. The default is false.
-%       xSpacing            - Determine the x-axis spacing of boxes. By
-%                             default ('x'), the data in x are used to
-%                             determine the position of boxes on the x-axis
-%                             (when x is numeric). Alternativley, when set
-%                             to 'equal', boxes are equally-spaced, but the
-%                             data in x are used to label the axis; the
-%                             x-axis ticks are at 1:LENGTH(X).
 %       handles             - Structure containing handles to the various
 %                             objects that constitute the plot. The
 %                             fields/handles are:

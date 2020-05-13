@@ -10,11 +10,11 @@
 %   See bar and errorbar documentation for more details.
 %
 %   Output:
-%   [hBar hErrorbar] = barwitherr(..) returns a vector of handles to the 
+%   [hBar hErrorbar] = barwitherr(..) returns a vector of handles to the
 %                      barseries (hBar) and error bar (hErrorbar) objects
 %
 %   Symmetric Example:
-%   y = randn(3,4);         % random y values (3 groups of 4 parameters) 
+%   y = randn(3,4);         % random y values (3 groups of 4 parameters)
 %   errY = 0.1.*y;          % 10% error
 %   h = barwitherr(errY, y);% Plot with errorbars
 %
@@ -38,27 +38,27 @@
 %
 %   Notes:
 %   Ideally used for group plots with non-overlapping bars because it
-%   will always plot in bar centre (so can look odd for over-lapping bars) 
-%   and for stacked plots the errorbars will be at the original y value is 
+%   will always plot in bar centre (so can look odd for over-lapping bars)
+%   and for stacked plots the errorbars will be at the original y value is
 %   not the stacked value so again odd appearance as is.
 %
-%   The data may not be in ascending order.  Only an issue if x-values are 
-%   passed to the fn in which case their order must be determined to 
+%   The data may not be in ascending order.  Only an issue if x-values are
+%   passed to the fn in which case their order must be determined to
 %   correctly position the errorbars.
 %
 %
 %   24/02/2011  Martina F. Callaghan    Created
-%   12/08/2011  Martina F. Callaghan    Updated for random x-values   
+%   12/08/2011  Martina F. Callaghan    Updated for random x-values
 %   24/10/2011  Martina F. Callaghan    Updated for asymmetric errors
 %   15/11/2011  Martina F. Callaghan    Fixed bug for assymetric errors &
 %                                       vector plots
 %   14/06/2013  Martina F. Callaghan    Returning handle as recommended by
 %                                       Eric (see submission comments)
 %   08/07/2013  Martina F. Callaghan    Only return handle if requested.
-%   18/07/2013  Martina F. Callaghan    Bug fix for single group data that 
+%   18/07/2013  Martina F. Callaghan    Bug fix for single group data that
 %                                       allows assymetric errors.
 %                                       Also removed dot from display as
-%                                       per Charles Colin comment. The 
+%                                       per Charles Colin comment. The
 %                                       handle can be returned to control
 %                                       appearance.
 %   27/08/2013  Martina F. Callaghan    Ensuring errors are always stored
@@ -78,12 +78,18 @@ if nargin < 3
     % This is the same as calling bar(y)
     values = varargin{1};
     xOrder = 1:size(values,1);
+    modif = {};
 else
     % This means extra parameters have been specified
     if isscalar(varargin{2}) || ischar(varargin{2})
         % It is a width / property so the y values are still varargin{1}
         values = varargin{1};
         xOrder = 1:size(values,1);
+        if length(varargin)>1
+            modif = varargin(2:end);
+        else
+            modif = {};
+        end
     else
         % x-values have been specified so the y values are varargin{2}
         % If x-values have been specified, they could be in a random order,
@@ -107,7 +113,7 @@ else
     upperErrors = errors;
 end
 
-    
+
 % Check that the size of "errors" corresponsds to the size of the y-values.
 % Arbitrarily using lower errors as indicative.
 if any(size(values) ~= size(lowerErrors))
@@ -135,7 +141,7 @@ if nRows > 1
         % Use the mean x values to call the standard errorbar fn; the
         % errorbars will now be centred on each bar; these are in ascending
         % order so use xOrder to ensure y values and errors are too:
-        hErrorbar(col) = errorbar(mean(x,1), values(xOrder,col), lowerErrors(xOrder,col), upperErrors(xOrder, col), '.k');
+        hErrorbar(col) = errorbar(mean(x,1), values(xOrder,col), lowerErrors(xOrder,col), upperErrors(xOrder, col), '.k',modif);
         set(hErrorbar(col), 'marker', 'none')
     end
 else
@@ -143,11 +149,10 @@ else
         % Original graphics:
         x = get(get(handles.bar,'children'),'xdata');
     else
-       % New graphics:
-       x =  handles.bar.XData + [handles.bar.XOffset];
-   end
-    
-    hErrorbar = errorbar(mean(x,1), values, lowerErrors, upperErrors, '.k');
+        % New graphics:
+        x =  handles.bar.XData + [handles.bar.XOffset];
+    end
+    hErrorbar = errorbar(mean(x,1), values, lowerErrors, upperErrors, '.k',modif{:});
     set(hErrorbar, 'marker', 'none')
 end
 
