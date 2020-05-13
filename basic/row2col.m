@@ -1,6 +1,9 @@
 function [y] = row2col(data,chn)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+%function [y] = row2col(data,chn)
+%default: chn=1
+if nargin<2
+    chn = 1;
+end
 [row,col] = size(data);
 if row==0
     y=[];

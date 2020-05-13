@@ -1,6 +1,6 @@
 function idata = piecewisefn(fun,data,varargin)
 %idata = piecewisefn(fun,data,varargin)
-%varargin: 'edge',[1 20 40 60];
+%varargin: 'edge',[1 20 40 60] OR 'label', label;
 %data : vector or multidim array
 p=inputParser;
 addRequired(p,'func',@(x) isa(x,'function_handle'));
