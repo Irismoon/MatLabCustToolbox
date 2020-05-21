@@ -7,7 +7,7 @@ function S = matdoc(varargin)
 %the varargin is recommended to record here, too, since it sometimes also contains necessary.
 %parameters
 S.time = datetime('now');
-% st = dbstack('-completenames',1);%omit first frame
+st = dbstack('-completenames',1);%omit first frame
 S.codefile = st(1).file;
 S.gitInfo = getGitInfo;
 len = length(varargin);
