@@ -14,6 +14,7 @@ function h = boxplot2(varargin)
 %                   ndata the number of points per boxplot.3.nx x ny cell,
 %                   inside a ndata x 1 vector, each cell may have different
 %                   number of elements
+%   example:        nx(2) x ny(3), two clusters, each 3 boxes
 %
 %   x:              vector of x locations for each box cluster
 %
@@ -25,7 +26,7 @@ function h = boxplot2(varargin)
 %
 %   barwidth:       Barwidth value used to position boxes (see bar) [0.8]
 %
-%   whisker:        whisker length factor (see boxplot) [1.5]
+%   whisker:        whisker length factor (see wboxplot) [1.5]
 %
 %   axes:           axis to plot to [gca]
 %
@@ -41,12 +42,7 @@ function h = boxplot2(varargin)
 %                   'uadj':     upper adjacent value
 %                   'uwhis':    upper whisker    
 %
-% I don't like the original boxplot function... it messes with axis
-% dimensions, replaces tick labels with text (even if no rotation is
-% needed), and in general hijacks the axis too much.  Plus it doesn't
-% return the handles to the plotted objects in an easy-to-use way (I can
-% never remember which row corresponds to which part of the boxplot).  This
-% version creates more light-handed boxplots, assuming that any cosmetic
+% This version creates more light-handed boxplots, assuming that any cosmetic
 % changes (color, tick labels, line specs, etc) can be added by the user
 % afterwards if necessary.  It also allows one to create clustered
 % boxplots, similar to an unstacked bar graph.
