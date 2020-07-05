@@ -141,7 +141,11 @@ if nRows > 1
         % Use the mean x values to call the standard errorbar fn; the
         % errorbars will now be centred on each bar; these are in ascending
         % order so use xOrder to ensure y values and errors are too:
-        hErrorbar(col) = errorbar(mean(x,1), values(xOrder,col), lowerErrors(xOrder,col), upperErrors(xOrder, col), '.k',modif);
+        if isempty(modif)
+           hErrorbar(col) = errorbar(mean(x,1), values(xOrder,col), lowerErrors(xOrder,col), upperErrors(xOrder, col), '.k'); 
+        else
+            hErrorbar(col) = errorbar(mean(x,1), values(xOrder,col), lowerErrors(xOrder,col), upperErrors(xOrder, col), '.k',modif);
+        end
         set(hErrorbar(col), 'marker', 'none')
     end
 else
@@ -152,7 +156,11 @@ else
         % New graphics:
         x =  handles.bar.XData + [handles.bar.XOffset];
     end
-    hErrorbar = errorbar(mean(x,1), values, lowerErrors, upperErrors, '.k',modif{:});
+    if isempty(modif)
+        hErrorbar = errorbar(mean(x,1), values, lowerErrors, upperErrors, '.k');
+    else
+        hErrorbar = errorbar(mean(x,1), values, lowerErrors, upperErrors, '.k',modif{:});
+    end
     set(hErrorbar, 'marker', 'none')
 end
 
