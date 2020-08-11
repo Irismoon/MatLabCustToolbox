@@ -65,7 +65,7 @@ classdef Pushbullet < handle
         
         
         function output = pushNote(self, device_iden, title, message)
-            % Push a note
+            % pushNote([], title, message)
             % https://docs.pushbullet.com/v2/pushes
             % Arguments:
             % device_iden -- iden of device to push to
