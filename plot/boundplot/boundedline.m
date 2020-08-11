@@ -202,6 +202,10 @@ end
 % plotting
 %--------------------
 
+if all(size(err{1})==size(y{1}))
+    err{1} = permute(err{1},[1,3,2]);
+end
+
 % Calculate y values for bounding lines
 
 plotdata = cell(0,7);
