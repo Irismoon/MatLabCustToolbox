@@ -25,7 +25,12 @@ function [D, ni] = find_nn(X, k)
 	if ~exist('k', 'var') || isempty(k)
 		k = 12;
     end
-    
+    if size(X,1)==size(X,2)
+        disp('we think your input is distance matrix!');
+	flagdist = true;
+    else 
+	flagdist = false;
+    end
     % Perform adaptive neighborhood selection if desired
     if ischar(k)
         [D, max_k] = find_nn_adaptive(X);
@@ -39,7 +44,7 @@ function [D, ni] = find_nn(X, k)
     
     % Perform normal neighborhood selection
     else
-        
+        if ~flagdist
         % Compute distances in batches
         n = size(X, 1);
         sum_X = sum(X .^ 2, 2);
@@ -60,5 +65,16 @@ function [D, ni] = find_nn(X, k)
         Dout(sub2ind([n, n], idx,   ni(:))) = D;
         Dout(sub2ind([n, n], ni(:), idx))   = D;
         D = Dout;
+	else
+	n = size(X,1);
+	D = X;
+	[DD,ind] = sort(D,2,'ascend');
+	DD = DD(:,2:k+1);%data points x k
+	ni = ind(:,2:k+1);
+	Dout = sparse(n,n);
+	idx = repmat(1:n,[1 k])';
+	Dout(sub2ind([n,n], idx, ni(:))) = DD;
+	Dout(sub2ind([n,n],ni(:),idx)) = DD;
+	D = Dout;
     end
     
