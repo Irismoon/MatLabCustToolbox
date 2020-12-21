@@ -1,6 +1,6 @@
 function figlist = multchnPlot(x,t,markt,varargin)
-%figlist = multchnPlot(x,t,markt,stdx(op),chnname(op),pnname(op),auto(op),layout(op),plotstyle)
-%x: ts x trial x chn; the last dimension is one subplot
+%figlist = multchnPlot(x,t,markt,stdx(op),chnname(op),pnname(op),auto(op),layout(op),‘plotstyle’,'plot')
+%x: ts x line x chn; the last dimension is one subplot
 %t, 2 x 1 vector, start and end of a trial
 %markt, any length vector
 %stdx, standard deviation of x for boundplot,t x 2 x line x chn
@@ -8,6 +8,7 @@ function figlist = multchnPlot(x,t,markt,varargin)
 %layout: the layout of whole figure
 %lplotstyle: 'boundplot','plot','imagesc'
 %auto: 1 is autoadjust, 0 is not autoadjust
+%example, multchnPlot(x,[-0.5,0.1],[0],[],chnname,'plotstyle','plot');
 sz = size(x);
 if length(sz)<3
     sz = [sz 1];
@@ -76,6 +77,9 @@ for i = 1:chnNo
             plot(linspace(t(1),t(end),sz(1)),x(:,:,i));%ts x trial
             xlabel('t/s');ylabel('power/dB');
             ax = gca;ax.XLim = [t(1) t(end)];
+            hold on;
+            arrayfun(@(i) line([markt(i) markt(i)],ax.YLim,'Color','k','LineStyle','--','LineWidth',1.5),...
+                1:length(markt),'un',0);
         case 'imagesc'
             imagesc(x(:,:,i)');%trial x ts
             colorbar;
@@ -87,9 +91,11 @@ for i = 1:chnNo
             hold on;
             arrayfun(@(i) line(fs*([markt(i) markt(i)]-t(1)),ax.YLim,'Color','k','LineStyle','--','LineWidth',1.5),...
                 1:length(markt),'un',0);
+        otherwise
+            warning('no appropriate plotstyle, should be: boundplot, plot, imagesc')
     end
     
-%     title(chnname{i});
+    title(chnname{i});
     if mod(i,prod(layout))==0 || i==chnNo
 %         suptitle(num2str(pnname));
     end

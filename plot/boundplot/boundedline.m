@@ -167,6 +167,12 @@ if ~ismember(nanflag, {'fill', 'gap', 'remove'})
     error('Nan flag must be ''fill'', ''gap'', or ''remove''');
 end
 
+% [found, color, varargin] = parseparam(varargin, 'color');
+% 
+% if ~found
+%     color = [0 0 0];
+% end
+
 % X, Y, E triplets, and linespec
 
 [x,y,err,linespec] = deal(cell(0));
@@ -202,7 +208,7 @@ end
 % plotting
 %--------------------
 
-if all(size(err{1})==size(y{1}))
+if ndims(err{1})==ndims(y{1}) && all(size(err{1})==size(y{1}))
     err{1} = permute(err{1},[1,3,2]);
 end
 
