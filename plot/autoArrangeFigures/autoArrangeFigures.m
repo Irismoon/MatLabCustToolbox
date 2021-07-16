@@ -1,5 +1,5 @@
-function autoArrangeFigures(NH, NW, monitor_id)
-%autoArrangeFigures(NH, NW, monitor_id)
+function autoArrangeFigures(NH, NW, monitor_id,figHandle)
+%autoArrangeFigures(NH, NW, monitor_id,figHandle)
 %or autoArrangeFigures
 % INPUT  :
 %        NH : number of grid of vertical direction
@@ -42,8 +42,10 @@ if N_FIG == 0
 else
     autoArrange = 0;
 end
-figHandle = sortFigureHandles(findobj('Type','figure'));
-n_fig = size(figHandle,1);
+if nargin<4
+    figHandle = sortFigureHandles(findobj('Type','figure'));
+end
+n_fig = length(figHandle);
 if n_fig <= 0
     warning('figures are not found');
     return
@@ -52,11 +54,12 @@ end
 %     screen_sz = [1 1 1920 1080];
 % else
 screen_sz1 = get(0,'MonitorPositions');
+screen_sz1 = screen_sz1(monitor_id,:);
 screen_sz2 = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
 if screen_sz1(3:4) == [screen_sz2.width screen_sz2.height]
-    screen_sz = [1 1 screen_sz1.width screen_sz1.height];
+    screen_sz = screen_sz1;
 else%usually 1 is smaller than 2
-    screen_sz = [1 screen_sz1(4)-screen_sz2.height screen_sz2.width screen_sz2.height];
+    screen_sz = [screen_sz1(1) screen_sz1(4)-screen_sz2.height screen_sz2.width screen_sz2.height];
 end
 %still unsure why matlab could not correctly map the height of the screen
 % end

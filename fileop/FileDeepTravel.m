@@ -1,4 +1,5 @@
 function [ mResFiles, iTCount ] = FileDeepTravel( strPath, mFiles, iTotalCount )
+%please refer to FileRangTraversal
 iTmpCount = iTotalCount;
 path=strPath;
 Files = dir(fullfile( path,'*.*'));

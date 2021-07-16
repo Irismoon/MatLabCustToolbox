@@ -20,12 +20,12 @@ function [ mFiles ] = FileRangTraversal( strPath )
         while LengthFiles>0
             if Files(iCount).isdir==1
                 if Files(iCount).name ~='.'
-                    filePath = [strPath  Files(iCount).name filesep];
+                    filePath = fullfile(strPath,Files(iCount).name);
                     [r,c] = size(mPath);
                     mPath{c+1}= filePath;
                 end
             else
-                filePath = [strPath  Files(iCount).name];
+                filePath = fullfile(strPath,Files(iCount).name);
                 [row,col] = size(mFiles);
                 mFiles{col+1}=filePath;
             end
